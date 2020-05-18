@@ -15,3 +15,4 @@ Design: [Daniels template](http://www.innovationplans.com/idesign/daniels/partic
 ### Authors
 [Dovydas](https://github.com/Dovydas5), 
 [Gytis] (https://github.com/gytislaukaitisi)
+[Klaudijus] (https://github.com/Klaudijus1996)
