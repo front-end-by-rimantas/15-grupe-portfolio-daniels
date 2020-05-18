@@ -13,7 +13,25 @@
 .services-box > i {
     display: inline-block;
     font-size: 2rem;
-    margin: 0.5rem 0
+    margin: 0.5rem 0;
+    padding: 1rem;
 }
 
-
+.services-box > i:hover {
+    background-color: black;
+    border-radius: 40%;
+    color: white;
+}
+.services-box > h3 {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.services-box > p {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    color: #748182;
+    
+    
+}
