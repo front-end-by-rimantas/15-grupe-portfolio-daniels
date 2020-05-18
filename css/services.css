@@ -2,7 +2,17 @@
     display: inline-block;
     text-align: center;
     background-color: #f7f7f7;
+    margin: 0;
+    width: 100%;
 }
+.services > h2 {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    color: #343434;
+}
+
 .services > .services-box {
     display: inline-block;
     width: 25%;
@@ -31,7 +41,7 @@
     display: inline-block;
     width: 100%;
     font-size: 1rem;
+    padding-top: 1.5rem;
     color: #748182;
-    
     
 }
