@@ -25,6 +25,7 @@ body {
     height: 50px;
     margin-top: 50px;
     z-index: 3;
+    box-sizing: content-box;
 }
 .nav > a{
     display:inline-block;
@@ -35,12 +36,12 @@ body {
     margin-right: 40px;
     float:right;
 }
-.nav >.daniels{
+.nav > :last-child{
     float:left;
     font-size: 26px;
     font-weight: 600;
     margin-left: 100px;
-    margin-top: -16px;
+    line-height: 1;
 }
 .nav >.contact{
     margin-right: 120px;
@@ -72,5 +73,23 @@ body {
    padding:8px 12px;
    border-radius: 50%;
    background: rgba(0,0,0,0.5);
+}
+@media (max-width: 700px) {
+    .nav {
+        display:inline-block;
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .nav > a{
+        display:inline-block;
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+    .nav > :last-child {
+        display:inline-block;
+        margin: 0;       
+    }
 }
 
