@@ -1,0 +1,74 @@
+body {
+    background-color: #4DB9DE;
+}
+.hero {
+    margin-bottom: 30px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    height: 700px;
+    filter:brightness(50%);
+
+}
+.nav {
+    display:inline-block;
+    position: absolute;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+.nav > a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color:white;
+    margin-right: 40px;
+    float:right;
+}
+.nav >.daniels{
+    float:left;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 100px;
+    margin-top: -16px;
+}
+.nav >.contact{
+    margin-right: 120px;
+}
+.nav > .home{
+    border-bottom: 2px solid white;
+}
+.hero > .intro{
+    width:100%;
+    font-size: 40px; 
+    color:white;  
+    position:absolute;
+    margin-top: 240px;
+}
+p{
+    width:100%;
+    font-size:74px;
+    font-weight: 200;
+}
+.hero > .intro >.row .fa{
+    display:inline;
+   font-size: 16px;
+   width:100%;
+   text-decoration: none;
+   color:white;
+   line-height: 4;
+   box-sizing: content-box;
+   background-color: aqua;
+   padding:10px;
+   border-radius: 60%;
+   background: rgba(0,0,0,0.5);
+}
+
