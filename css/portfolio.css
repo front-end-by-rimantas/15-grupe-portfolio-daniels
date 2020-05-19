@@ -1,7 +1,7 @@
 .portfolio {
     display: inline-block;
     text-align: center;
-    width: 100%;
+    width: 100%;   
     margin-top: 40px;
 }
 
@@ -39,6 +39,9 @@
     color: #222;
     font-size: 1.25rem;
     cursor: pointer;
-  
-   
+}
+.portfolio > .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }

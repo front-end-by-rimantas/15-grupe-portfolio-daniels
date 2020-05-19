@@ -33,7 +33,7 @@ const portfolio = [
   },
 ];
 
-function renderFilter(filter) {
+function galleryImages(filter) {
   let HTML = "";
   document.querySelector(".gallery").innerHTML = HTML;
 
@@ -41,7 +41,7 @@ function renderFilter(filter) {
     if (portfolio[i].category.includes(filter)) {
       HTML = `
             <div>
-            <img src="${portfolio[i].img}" alt="portfolio img">
+            <img src="${portfolio[i].img}" alt="images" class="images">
             <div class="gallery-item">
             <div>
             <span> ${portfolio[i].title} <span>
@@ -50,10 +50,9 @@ function renderFilter(filter) {
             </div>
             </div>
             </div>`;
-      document.querySelector('.gallery').innerHTML += HTML
-
+      document.querySelector(".gallery").innerHTML += HTML;
     }
   }
 }
 
-renderFilter("All");
+galleryImages("All");
