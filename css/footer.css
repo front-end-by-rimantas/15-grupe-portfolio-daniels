@@ -1,4 +1,4 @@
-.footeris {
+.footer {
     display: inline-block;
     padding: 20px 30px;
     background-color: #1c1c1c;
@@ -6,7 +6,5 @@
     color: #748182;
     line-height: 18px;
     font-size: 13px;
+    text-align: center;
 }
-    .footeris > .centerfoot {
-        text-align: center;
-    }
