@@ -1,4 +1,5 @@
  .kitoks {  
+
     padding: 100px 0;
     margin-right: auto;
     margin-left: auto;
@@ -7,6 +8,7 @@
     background-color: #ffffff;
     display: inline-block;
 }
+
 .kitoks > .nmargin {
     margin-left: -15px;
     margin-right: -15px;
