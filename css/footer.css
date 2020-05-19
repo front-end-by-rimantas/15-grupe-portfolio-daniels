@@ -1,0 +1,12 @@
+.footeris {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #1c1c1c;
+    width: 100%;
+    color: #748182;
+    line-height: 18px;
+    font-size: 13px;
+}
+    .footeris > .centerfoot {
+        text-align: center;
+    }
