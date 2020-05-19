@@ -41,14 +41,14 @@ function galleryImages(filter) {
     if (portfolio[i].category.includes(filter)) {
       HTML = `
             <div>
-            <img src="${portfolio[i].img}" alt="images" class="images">
-            <div class="gallery-item">
-            <div>
-            <span> ${portfolio[i].title} <span>
-            <i class="gallery-down fa fa-chain-broken" ></i>
-            <i class="gallery-zoom fa fa-search-plus" ></i>
-            </div>
-            </div>
+                <img src="${portfolio[i].img}" alt="images" class="images">
+                    <div class="gallery-item">
+                        <div>
+                        <span> ${portfolio[i].title} <span>
+                        <i class="chain fa fa-chain-broken" ></i>
+                        <i class="zoom-in fa fa-search-plus" ></i>
+                        </div>
+                    </div>
             </div>`;
       document.querySelector(".gallery").innerHTML += HTML;
     }

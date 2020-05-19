@@ -48,3 +48,16 @@
 .portfolio > .gallery > div > img {
     width: 100%;
 }
+
+@media (max-width: 800px){
+
+
+    .portfolio > .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+}
+.portfolio > .gallery > div > img {
+    width: 40%;
+}
+}
