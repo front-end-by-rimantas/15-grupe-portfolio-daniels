@@ -22,9 +22,11 @@
     }
     .heder > h3 {
         font-size: 40px ;
+        display: inline-block;
         background-image: url(http://www.innovationplans.com/idesign/daniels/img/dots.png);
         background-repeat: repeat;
-        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        color: #343434;
     }
     .contactbox {
         width: 80%;
