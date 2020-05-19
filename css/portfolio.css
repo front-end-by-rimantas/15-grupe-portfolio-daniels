@@ -26,13 +26,13 @@
     width: 80%;
     height: 50%;
 }
-.portfolio > .links {
+.portfolio > .filter-buttons {
     justify-content: center;
     margin: 40px 0;
   
    
 }
-.portfolio > .links > span {
+.portfolio > .filter-buttons > span {
     display: inline-block;
     justify-content: center;
     margin: 0 20px;

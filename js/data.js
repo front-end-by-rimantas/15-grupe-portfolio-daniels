@@ -1,6 +1,4 @@
 // SERVICES DATA
-
-
 const services = [
 {
     icon: 'laptop',
