@@ -1,7 +1,6 @@
 .container {
     width: 100%;
-    min-height: 80vh;
-    padding: 30px;
+ 
 }   
 
 .container.about-me > .left {
