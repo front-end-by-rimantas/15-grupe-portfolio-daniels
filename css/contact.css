@@ -1,19 +1,16 @@
-.container {
-    padding: 100px 0;
-    margin-right: auto;
-    margin-left: auto;
+ .kitoks {  
+    display:inline-block;
     width: 100%;
     text-align: center;
     background-color: #ffffff;
 }
 .container > .nmargin {
-    margin-left: -15px;
-    margin-right: -15px;
+    display:inline;;
+    width: calc(100% / 3);
     text-align: center;
 }
     .heder {
         width: 100%;
-        margin-bottom: 100px;
     }
     .heder > h3 {
         font-size: 40px ;
