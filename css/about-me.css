@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    min-height: 80vh;
+}   
+
+.container.about-me > .left {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    /* margin-left: 70px; */
+    /* padding: 30px 0 0 30px; */
+}
+
+.container.about-me > .left img {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    float: left;
+}
+.container.about-me > .row {
+    box-sizing: border-box;
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding: 50px 20px 20px 50px;
+}
+.container.about-me > .row > p{
+    font-size: 16px;
+    line-height: 16px;
+    color: darkgray;
+    padding: 20px 0;
+    display: inline-block;
+}
+.container.about-me > .row span{
+    font-weight: bold;
+    color: rgb(102, 100, 100);
+}
+
+.container.about-me > .row > p:first-of-type{
+    font-size: 16px;
+    line-height: 16x;
+    color: darkgray;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+.container.about-me > .row h1{
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+.container.about-me > .row > .button{
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.container.about-me > .row > .button.DWND{
+    background-color: black;
+    color: white;
+}
+.container.about-me > .row > .button.CCT{
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+}
+.container.about-me > .row > .button.DWND:hover {
+    background-color: white;
+    color:black;
+}
+.container.about-me > .row > .button.CCT:hover {
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+    
+.container.about-me > .left {
+    width: 100%;
+}
+.container.about-me > .row {
+    width: 100%;
+}
+}

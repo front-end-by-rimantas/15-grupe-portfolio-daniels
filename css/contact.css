@@ -38,6 +38,12 @@
             text-align: center;
             display: inline-block;
         }
+        .info-box:hover > .bubble {
+            background-color: black;
+                color: #F4F4F4;
+                border: solid 1px #F4F4F4;
+                transition: all .5s;
+        }
             .bubble {
                 width: 60px;
                 height: 60px;
@@ -47,12 +53,6 @@
                 margin-bottom: 25px;
                 font-size: 25px;
                 display: inline-block;
-            }
-            .bubble:hover {
-                background-color: black;
-                color: #F4F4F4;
-                border: solid 1px #F4F4F4;
-                transition: all .5s;
             }
             .bubble > i {
                 line-height: 60px;
