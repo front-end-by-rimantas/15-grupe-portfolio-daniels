@@ -1,6 +1,7 @@
 .container {
     width: 100%;
     min-height: 80vh;
+    padding: 30px;
 }   
 
 .container.about-me > .left {
@@ -72,11 +73,13 @@
 .container.about-me > .row > .button.DWND:hover {
     background-color: white;
     color:black;
+    cursor: pointer;
 }
 .container.about-me > .row > .button.CCT:hover {
     background-color: black;
     color: white;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 @media (max-width: 700px) {

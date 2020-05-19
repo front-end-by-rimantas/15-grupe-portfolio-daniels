@@ -1,11 +1,11 @@
 .progress.bar{
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     
 }
 .progress.bar > .progress{
     width: 100%;
-    height: 16px;
+    height: 20px;
     background-color: gainsboro;
     border-radius: 2px;
 }
@@ -31,15 +31,15 @@
     display: inline-block;
     float: left;
     margin-left: 10px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     color: rgb(250, 250, 250);
 }
 .progress.bar > .progress > .bar > .loading > .value{
     display: inline-block;
     float: right;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     margin-right: 10px;
     color: rgb(250, 250, 250);
 }
