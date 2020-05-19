@@ -5,11 +5,3 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
-body * {
-    display: inline-block;
-}
-
-script {
-    display: none;
-}
