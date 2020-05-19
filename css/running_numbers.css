@@ -1,0 +1,36 @@
+.running.number {
+    width: 100%;
+    background-color: white;
+    padding: 100px 0 70px;
+}
+
+.running.number > .title {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+}
+.running.number > .title h3{
+    color: black;
+    font-weight: bolder;
+    font-size: 32px;
+    font-weight: bold;
+}
+.running.number > .title p{
+    color: rgb(134, 134, 134);
+    font-weight: bolder;
+}
+@media (max-width: 700px) {
+    .running.number > .title {
+        width: 100%;
+        padding: 20px;
+    }
+    .running.number {
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+    }
+
+
+}
