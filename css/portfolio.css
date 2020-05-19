@@ -1,0 +1,47 @@
+.portfolio {
+    display: inline-block;
+    text-align: center;
+    width: 100%;   
+    margin-top: 40px;
+}
+
+
+.portfolio > h2 {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    font-weight: 600;
+}
+.portfolio > h2::after {
+    position: absolute;
+    background: url(../img/dots.png);
+    content: "";
+    top: 25px;
+    right: 5px;
+    left: 5px;
+    z-index: -2;
+    display: inline-block;
+    width: 80%;
+    height: 50%;
+}
+.portfolio > .filter-buttons {
+    justify-content: center;
+    margin: 40px 0;
+  
+   
+}
+.portfolio > .filter-buttons > span {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 20px;
+    color: #222;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.portfolio > .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
