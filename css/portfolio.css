@@ -35,7 +35,10 @@
 .portfolio > .links > span {
     display: inline-block;
     justify-content: center;
-    margin: 0 30px;
+    margin: 0 20px;
+    color: #222;
+    font-size: 1.25rem;
+    cursor: pointer;
   
    
 }
