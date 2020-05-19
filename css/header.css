@@ -1,0 +1,130 @@
+body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+}
+#particles-js{
+    height:100%;
+    margin-bottom: 30px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    height: 700px;
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+
+}
+.nav {
+    display:inline-block;
+    position: absolute;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    z-index: 3;
+    box-sizing: content-box;
+}
+.nav > a{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color:white;
+    margin-right: 40px;
+    float:right;
+}
+.nav > :last-child{
+    float:left;
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 100px;
+    line-height: 1;
+}
+.nav > :first-child{
+    margin-right: 120px;
+}
+.nav > :nth-child(7){
+    border-bottom: 2px solid white;
+}
+.hero > .intro{
+    width:100%;
+    font-size: 40px; 
+    color:white;  
+    position:absolute;
+    margin-top: 230px;
+    text-align: center;
+   
+}
+.hero >.intro >p{
+    width:100%;
+    font-size:74px;
+    font-weight: 200;
+    margin-top: 14px;
+}
+.hero > .intro >.row .fa{
+   display:inline;
+   font-size: 14px;
+   text-decoration: none;
+   color:white;
+   line-height: 8;
+   box-sizing: content-box;
+   background-color: aqua;
+   padding:8px 12px;
+   border-radius: 50%;
+   background: rgba(0,0,0,0.5);
+}
+@media (max-width: 700px) {
+    .nav {
+        display:inline;
+        width: 100%;
+        margin:0;
+        padding:0;
+        float:right;
+    }
+    .nav > a{
+        display:inline-block;
+        width: 12%;
+        margin:0;
+        padding-right: 3;
+    }
+    .nav > :first-child{
+        margin:0;
+    }
+    .nav > :last-child {
+        margin: 0;
+        font-size: 17px;
+              
+    }
+    .nav > :nth-child(7) {
+        border:none;
+        margin:0;
+        padding:0;
+        float:left;
+        width:12%;
+    }
+}
+@media (max-width: 500px) {
+    .nav {
+        display:inline;
+        width: 100%;
+        margin:0;
+        padding:0;
+        float:right;
+        border:none;
+    }
+    .nav > a{
+        display:inline-block;
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .nav > :last-child {
+        display:inline-block;
+        margin: 0;       
+    }
+}
+
