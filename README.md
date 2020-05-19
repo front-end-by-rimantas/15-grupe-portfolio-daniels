@@ -8,7 +8,7 @@
 
 This project is for educational purposes only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/15-grupe-portfolio-daniels/
+Site published at http://127.0.0.1:5500/
 
 Design: [Daniels template](http://www.innovationplans.com/idesign/daniels/particles.html)
 
