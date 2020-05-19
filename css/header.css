@@ -55,14 +55,15 @@ body {
     color:white;  
     position:absolute;
     margin-top: 230px;
-    text-align: center;
-   
+    text-align: center;  
 }
-.hero >.intro >p{
-    width:100%;
-    font-size:74px;
+.hero > .intro > p{
     font-weight: 200;
-    margin-top: 14px;
+    margin: 0.4em 0;
+    color: white;
+    font-size: 70px;
+    line-height: 1;
+
 }
 .hero > .intro >.row .fa{
    display:inline;

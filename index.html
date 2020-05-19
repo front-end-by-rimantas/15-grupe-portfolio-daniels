@@ -6,6 +6,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/Icon/android-chrome-192x192.png">
+    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/about-me.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
@@ -32,7 +34,13 @@
         <div class="container hero">
             <div class ="intro">
                 <h2>Hello</h2>
-                <p>I am Lary Daniels</p>
+                <p>I Am
+                    <span
+                       class="txt-rotate"
+                       data-period="2000"
+                       data-rotate='[ "Lary Daniels", "Developer", "Designer" ]'>
+                    </span>
+                  </p>
                 <div class="row">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -43,7 +51,6 @@
             </div>
             <div id="particles-js"></div>
         </div>  
-
  <!-- SERVICES -->
     <div class="container services">
         <h2>Services.</h2>
@@ -63,7 +70,74 @@
 
 
 
-<!-- CONTACT US -->
+      <div class="container about-me">
+        <div class="left">
+            <img src="./img/hero.png" alt="Hero image">
+        </div>
+        <div class="row">
+            <h1>About me.</h1>
+            <p>UI / UX DESIGNER & WEB DEVELOPER</p>
+            <p>Lorem ipsum <span>Jerry Daniels</span> dolor sit amet consectetur, adipisicing elit. Eius sapiente sit consectetur, quidem fuga, unde cupiditate accusamus similique aliquid animi sequi tenetur adipisci asperiores officiis aut omnis exercitationem placeat ea.</p>
+            <div class="progress bar">
+                <div class="progress">
+                    <div class="bar" style="width:95%;">
+                    <div class="loading">
+                        <!-- <div class="text"> -->
+                            <div class="title">Web Design</div>
+                            <div class="value">95%</div>
+                        <!-- </div> -->
+                    </div>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="progress bar">
+                <div class="progress">
+                    <div class="bar" style="width:80%;">
+                    <div class="loading">
+                        <!-- <div class="text"> -->
+                            <div class="title">Branding</div>
+                            <div class="value">80%</div>
+                        <!-- </div> -->
+                    </div>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="progress bar">
+                <div class="progress">
+                    <div class="bar" style="width:90%;">
+                    <div class="loading">
+                        <!-- <div class="text"> -->
+                            <div class="title">Development</div>
+                            <div class="value">90%</div>
+                        <!-- </div> -->
+                    </div>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="button DWND">
+                Download C.V
+            </div>
+            <div class="button CCT">
+                Contact Me
+            </div>
+        </div>
+</div>      
+    <div class="container services">
+        <h2>Services.</h2>
+    </div>
+<!-- ********************* Portfolio:  -->
+
+
+    <!-- *****************Testimonials : -->
+
+
+    <!-- ****************Running numbers: -->
+
+
+<!-- ***************OUR Blog : -->
     <section class="kitoks">
         <div class="nmargin">
             <div class="heder">
@@ -104,9 +178,9 @@
             </div>
         </div>
     </section>
-</div>
     <script src="./js/data.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/headerAnim.js"></script>
 </body>
 </html>
