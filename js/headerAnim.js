@@ -2,7 +2,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 8) || 2000;
+    this.period = parseInt(period, 10) || 2000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -21,9 +21,9 @@ var TxtRotate = function(el, toRotate, period) {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   
     var that = this;
-    var delta = 20 ;
+    var delta = 40 ;
   
-    if (this.isDeleting) { delta /= 20; }
+    if (this.isDeleting) { delta /= 2; }
   
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
