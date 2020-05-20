@@ -7,7 +7,7 @@
 
 
 .portfolio > h2 {
-    font-size: 2rem;
+    font-size: 3.25rem;
     position: relative;
     display: inline-block;
     width: 180px;
@@ -18,13 +18,12 @@
     position: absolute;
     background: url(../img/dots.png);
     content: "";
-    top: 25px;
-    right: 5px;
-    left: 5px;
-    z-index: -2;
+    top: 34px;
+    left: -15px;
+    z-index: -1;
     display: inline-block;
-    width: 80%;
-    height: 50%;
+    width: 120%;
+    height: 60%;
 }
 .portfolio > .filter-buttons {
     justify-content: center;
@@ -39,23 +38,17 @@
     color: #222;
     font-size: 1.25rem;
     cursor: pointer;
-}
-.portfolio > .filter-buttons > span::after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0;
-    background: transparent;
+    font-weight: 600;
 }
 
 .portfolio > .filter-buttons > span.active::after {
     content: '';
     display: block;
-    margin: auto;
     height: 2px;
-    width: 15px;
+    width: 85%;
     background: black;
+    z-index: -1;
+    transition: all 1s;
 
 }
 .portfolio > .gallery {
