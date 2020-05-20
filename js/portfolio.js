@@ -34,17 +34,32 @@ const portfolio = [
 ];
 
 
-const filterbuttons=document.querySelector('#filtering').children
-const filterItems = document.querySelector('.gallery-img')
+const filterbuttons=document.querySelector('#filtering'),
+  filterbtns=filterbuttons.children,
+  totalFilterBtn=filterbtns.length,
+  galleryItems=document.querySelector(".gallery-items").children
+  console.log(galleryItems)
+  for(let i=0; i<totalFilterBtn; i++){
+    filterbtns[i].addEventListener('click', function(){
+      filterbuttons.querySelector('.active').classList.remove("active")
+      this.classList.add("active")
 
-for (let i=0; i<filterbuttons.length; i++){
- filterbuttons[i].addEventListener("click", function(){
-  for(let j=0; j<filterbuttons.length; j++){
-    filterItems[j].classList.remove("active")
+    })
   }
-  this.classList.add("active")
- })
-}
+  
+
+// const filterItems = document.querySelector('.gallery-img')
+
+
+
+// for (let i=0; i<filterbuttons.length; i++){
+//  filterbuttons[i].addEventListener("click", function(){
+//   for(let j=0; j<filterbuttons.length; j++){
+//     filterItems[j].classList.remove("active")
+//   }
+//   this.classList.add("active")
+//  })
+// }
 
 function galleryImages(filter) {
   let HTML = "";
