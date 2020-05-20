@@ -59,6 +59,10 @@
 .portfolio > .gallery > div > img {
     width: 100%;
 }
+.portfolio > .gallery > div > img:hover {
+    width: 100%;
+    
+}
 
 
 
@@ -72,6 +76,9 @@
 .portfolio > .gallery > div > img {
     width:50%;
 }
+.portfolio > .gallery > div > img:hover {
+    width:50%;
+}
 }
 @media (max-width: 1000px){
 
@@ -81,6 +88,9 @@
         grid-template-columns: 1fr;
 }
 .portfolio > .gallery > div > img {
+    width: 25%;
+}
+.portfolio > .gallery > div > img:hover {
     width: 25%;
 }
 }
