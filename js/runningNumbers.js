@@ -1,7 +1,7 @@
 "use strict"
 let places = document.querySelectorAll('.counter');
 for (let i = 0; i < places.length; i++) {
-    animateValue(places[i], 3000);
+    animateValue(places[i], 1000);
 }
 
 function animateValue(element, duration) {   
