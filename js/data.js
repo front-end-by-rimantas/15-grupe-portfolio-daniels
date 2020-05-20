@@ -33,12 +33,14 @@ const services = [
 },
 ]
 let HTML = '';
-for ( let i=0; i< services.length; i++) {
+
+services.forEach(containers => {
     HTML += `<div class="services-box">
-                    <i class="fa fa-${services[i].icon}"></i>
-                    <h3>${services[i].title}</h3>
-                    <p>${services[i].text}</p>
-                </div>`
-}
+                <i class="fa fa-${containers.icon}"></i>
+                <h3>${containers.title}</h3>
+                <p>${containers.text}</p>
+             </div>` 
+})
+
 document.querySelector('.services').innerHTML += HTML
 
