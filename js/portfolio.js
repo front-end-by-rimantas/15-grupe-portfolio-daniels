@@ -33,6 +33,19 @@ const portfolio = [
   },
 ];
 
+
+const filterbuttons=document.querySelector('#filtering').children
+const filterItems = document.querySelector('.gallery-img')
+
+for (let i=0; i<filterbuttons.length; i++){
+ filterbuttons[i].addEventListener("click", function(){
+  for(let j=0; j<filterbuttons.length; j++){
+    filterItems[j].classList.remove("active")
+  }
+  this.classList.add("active")
+ })
+}
+
 function galleryImages(filter) {
   let HTML = "";
   document.querySelector(".gallery").innerHTML = HTML;
@@ -40,19 +53,23 @@ function galleryImages(filter) {
   for (let i = 0; i < portfolio.length; i++) {
     if (portfolio[i].category.includes(filter)) {
       HTML = `
-            <div>
-            <img src="${portfolio[i].img}" alt="images" class="images">
-            <div class="gallery-item">
-            <div>
-            <span> ${portfolio[i].title} <span>
-            <i class="gallery-down fa fa-chain-broken" ></i>
-            <i class="gallery-zoom fa fa-search-plus" ></i>
-            </div>
-            </div>
+            <div class="gallery-img">
+                <img src="${portfolio[i].img}" alt="images">
+                    <div class="gallery-item">
+                        <div>
+                        <span> ${portfolio[i].title} <span>
+                        <i class="chain fa fa-chain-broken" ></i>
+                        <i class="zoom-in fa fa-search-plus" ></i>
+                        </div>
+                    </div>
             </div>`;
       document.querySelector(".gallery").innerHTML += HTML;
     }
   }
 }
 
+
+
 galleryImages("All");
+
+

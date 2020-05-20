@@ -1,8 +1,8 @@
 .portfolio {
     display: inline-block;
     text-align: center;
-    width: 100%;   
-    margin-top: 40px;
+    width: 1400px;   
+    margin:70px calc(50% - 700px);
 }
 
 
@@ -40,8 +40,54 @@
     font-size: 1.25rem;
     cursor: pointer;
 }
+.portfolio > .filter-buttons > span::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+}
+
+.portfolio > .filter-buttons > span.active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 15px;
+    background: black;
+
+}
 .portfolio > .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
+}
+.portfolio > .gallery > div > img {
+    width: 100%;
+}
+
+
+
+@media (max-width: 1400px){
+
+
+    .portfolio > .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+}
+.portfolio > .gallery > div > img {
+    width:50%;
+}
+}
+@media (max-width: 1000px){
+
+
+    .portfolio > .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+}
+.portfolio > .gallery > div > img {
+    width: 25%;
+}
 }

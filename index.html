@@ -25,7 +25,8 @@
 <body>
 <!-- HEADER -->
     <div>
-        <div class="container nav">
+        <header>
+        <nav class="container nav" id="navlist">
             <a href="#">Contact</a>
             <a href="#">Blog</a>
             <a href="#">Clients</a>
@@ -34,9 +35,8 @@
             <a href="#">About</a>
             <a href="#">Home</a>
             <a href="#">Daniels</a>
-        </div>
+        </nav>
         <div class="container hero">
-            <a href="#" class="ham-menu"></a>
             <div class ="intro">
                 <h2>Hello</h2>
                 <p>I Am
@@ -56,8 +56,9 @@
             </div>
             <div id="particles-js"></div>
         </div>  
+        </header>
 <!-- ABOUT ME -->
-      <div class="container about-me">
+      <div class="container about-me" id="about">
           <div class="left">
             <img src="./img/hero.png" alt="Hero image">
         </div>
@@ -120,11 +121,11 @@
 <!-- ********************* Portfolio:  -->
 <div class="container portfolio">
     <h2>Portfolio.</h2>
-           <div class="filter-buttons">
-               <span class="active" data-target="all">All</span>
-               <span data-target="brand">Brand</span>
-               <span data-target="design">Design</span>
-               <span data-target="graphic">Graphic</span>
+           <div class="filter-buttons" id="filtering">
+               <span data-id="all" class="active">All</span>
+               <span data-id="brand">Brand</span>
+               <span data-id="design">Design</span>
+               <span data-id="graphic">Graphic</span>
            </div>
         <div class="gallery">
             <div class="items">
@@ -278,6 +279,7 @@
     </footer>
     <div id="loader" class="center"></div>
     <script src="./js/loading.js"></script>
+    <script src="./js/fixNav.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
