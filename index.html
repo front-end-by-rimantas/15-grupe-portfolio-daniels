@@ -24,15 +24,15 @@
 <body>
 <!-- HEADER -->
     <div>
-        <header>
+        <header id="section7">
         <nav class="container nav" id="navlist">
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-            <a href="#">Clients</a>
-            <a href="#">Works</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Home</a>
+            <a href="#section1">Contact</a>
+            <a href="#section2">Blog</a>
+            <a href="#section3">Clients</a>
+            <a href="#section4">Works</a>
+            <a href="#section5">Services</a>
+            <a href="#section6">About</a>
+            <a href="#section7">Home</a>
             <a href="#">Daniels</a>
         </nav>
         <div class="container hero">
@@ -57,7 +57,7 @@
         </div>  
         </header>
 <!-- ABOUT ME -->
-      <div class="container about-me" id="about">
+      <div class="container about-me" id="section6">
           <div class="left">
             <img src="./img/hero.png" alt="Hero image">
         </div>
@@ -113,12 +113,12 @@
         </div>
 </div>      
      <!-- SERVICES -->
-     <div class="container services">
+     <div class="container services" id="section5">
         <h2>Services.</h2>
     </div>
 
 <!-- ********************* Portfolio:  -->
-<div class="container portfolio">
+<div class="container portfolio" id="section4">
     <h2>Portfolio.</h2>
            <div class="filter-buttons">
                <span class="active" data-target="all">All</span>
@@ -133,7 +133,7 @@
         </div>
     </div>
     <!-- *****************Testimonials : -->
-<div class="container testimonials">
+<div class="container testimonials" id="section3">
     <h4 class="testimonials_h4">Testimonials.</h4>
     <div class="testimonials_div">
         <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
@@ -153,7 +153,7 @@
 
 <!-- ***************OUR Blog : -->
 
-    <section class="blog-container">
+    <section class="blog-container" id="section2">
         <div class="heder">
             <h3>Our Blog.</h3>
         </div>
@@ -212,7 +212,7 @@
 
     <!-----Contact Us.----->
 
-    <section class="kitoks">
+    <section class="kitoks" id="section1">
         <div class="nmargin">
             <div class="heder">
                 <h3>Contact Us.</h3>
@@ -263,5 +263,6 @@
     <script src="./js/app.js"></script>
     <script src="./js/headerAnim.js"></script>
     <script src="./js/portfolio.js"></script>
+    <script src="./js/scrolSpy.js"></script>
 </body>
 </html>
