@@ -9,30 +9,31 @@
     <link rel="stylesheet" href="./css/progress-bar.css">
     <link rel="stylesheet" href="./css/about-me.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/running_numbers.css">
     <link rel="stylesheet" href="./css/testimonials.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>Daniels</title>
+    <column>Daniels</column>
 </head>
 <body>
 <!-- HEADER -->
     <div>
-        <header>
+        <header id="section7">
         <nav class="container nav" id="navlist">
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-            <a href="#">Clients</a>
-            <a href="#">Works</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Home</a>
+            <a href="#section1">Contact</a>
+            <a href="#section2">Blog</a>
+            <a href="#section3">Clients</a>
+            <a href="#section4">Works</a>
+            <a href="#section5">Services</a>
+            <a href="#section6">About</a>
+            <a href="#section7">Home</a>
             <a href="#">Daniels</a>
         </nav>
         <div class="container hero">
@@ -41,7 +42,7 @@
                 <p>I Am
                     <span
                        class="txt-rotate"
-                       data-period="2000"
+                       data-period="00"
                        data-rotate='[ "Lary Daniels", "Developer", "Designer" ]'>
                     </span>
                   </p>
@@ -57,7 +58,7 @@
         </div>  
         </header>
 <!-- ABOUT ME -->
-      <div class="container about-me" id="about">
+      <div class="container about-me" id="section6">
           <div class="left">
             <img src="./img/hero.png" alt="Hero image">
         </div>
@@ -70,7 +71,7 @@
                     <div class="bar" style="width:95%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="title">Web Design</div>
+                            <div class="column">Web Design</div>
                             <div class="value">95%</div>
                             <!-- </div> -->
                     </div>
@@ -83,7 +84,7 @@
                     <div class="bar" style="width:80%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="title">Branding</div>
+                            <div class="column">Branding</div>
                             <div class="value">80%</div>
                         <!-- </div> -->
                     </div>
@@ -96,7 +97,7 @@
                     <div class="bar" style="width:90%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="title">Development</div>
+                            <div class="column">Development</div>
                             <div class="value">90%</div>
                             <!-- </div> -->
                     </div>
@@ -113,12 +114,12 @@
         </div>
 </div>      
      <!-- SERVICES -->
-     <div class="container services">
+     <div class="container services" id="section5">
         <h2>Services.</h2>
     </div>
 
 <!-- ********************* Portfolio:  -->
-<div class="container portfolio">
+<div class="container portfolio" id="section4">
     <h2>Portfolio.</h2>
            <div class="filter-buttons" id="filtering">
                <span data-category="all" class="active">All</span>
@@ -132,7 +133,7 @@
         </div>
     </div>
     <!-- *****************Testimonials : -->
-<div class="container testimonials">
+<div class="container testimonials" id="section3">
     <h4 class="testimonials_h4">Testimonials.</h4>
     <div class="testimonials_div">
         <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
@@ -148,11 +149,34 @@
 </div>
 
     <!-- ****************Running numbers: -->
+<div class="running_number-container">
+    <div class="column">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <div class="counter">850</div>
+        <p>Happy Customers</p>
+    </div>
+    <div class="column">
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+        <div class="counter">230</div>
+        <p>Complete Projects</p>    
+    </div>
+    <div class="column">
+        <i class="fa fa-bullhorn"></i>
+        <div class="counter">9450</div>
+        <p>Lines Of Code</p>    
+    </div>
+    <div class="column">
+        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+        <div class="counter">780</div>
+        <p>Files Downloaded</p>    
+    </div>
+</div>
+
 
 
 <!-- ***************OUR Blog : -->
 
-    <section class="blog-container">
+    <section class="blog-container" id="section2">
         <div class="heder">
             <h3>Our Blog.</h3>
         </div>
@@ -211,7 +235,7 @@
 
     <!-----Contact Us.----->
 
-    <section class="kitoks">
+    <section class="kitoks" id="section1">
         <div class="nmargin">
             <div class="heder">
                 <h3>Contact Us.</h3>
@@ -262,5 +286,7 @@
     <script src="./js/app.js"></script>
     <script src="./js/headerAnim.js"></script>
     <script src="./js/portfolio.js"></script>
+    <script src="./js/runningNumbers.js"></script>
+    <script src="./js/scrolSpy.js"></script>
 </body>
 </html>
