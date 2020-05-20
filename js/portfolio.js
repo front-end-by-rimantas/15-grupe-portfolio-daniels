@@ -33,22 +33,16 @@ const portfolio = [
   },
 ];
 
+
 const filterbuttons=document.querySelector('#filtering').children
-const filterItems = document.querySelector('.gallery').children
+const filterItems = document.querySelector('.gallery-img')
 
 for (let i=0; i<filterbuttons.length; i++){
  filterbuttons[i].addEventListener("click", function(){
-  console.log(this)
- 
-  const target=this.getAttribute("data-target")
-  for (let k=0; k<filterItems.length; k++){
-    filterItems[k].style.display="none";
-    if(target==filterItems[k].getAttribute("data-target"))
-    {
-        filterItems[k].style.display="block";
-    }
-    
+  for(let j=0; j<filterbuttons.length; j++){
+    filterItems[j].classList.remove("active")
   }
+  this.classList.add("active")
  })
 }
 
@@ -74,4 +68,8 @@ function galleryImages(filter) {
   }
 }
 
+
+
 galleryImages("All");
+
+

@@ -48,15 +48,7 @@
     width: 0;
     background: transparent;
 }
-.portfolio > .filter-buttons > span:hover::after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 2px;
-    width: 45px;
-    background: black;
-    transition: .5s ease,  .5s ease;
-}
+
 .portfolio > .filter-buttons > span.active::after {
     content: '';
     display: block;
@@ -82,13 +74,13 @@
 
     .portfolio > .gallery {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
 }
 .portfolio > .gallery > div > img {
     width:50%;
 }
 }
-@media (max-width: 1300px){
+@media (max-width: 1000px){
 
 
     .portfolio > .gallery {
