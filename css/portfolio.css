@@ -49,15 +49,27 @@
     width: 100%;
 }
 
-@media (max-width: 800px){
+
+
+@media (max-width: 1400px){
+
+
+    .portfolio > .gallery {
+        display: grid;
+        grid-template-columns: 1fr ;
+}
+.portfolio > .gallery > div > img {
+    width:50%;
+}
+}
+@media (max-width: 1300px){
 
 
     .portfolio > .gallery {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 20px;
 }
 .portfolio > .gallery > div > img {
-    width: 40%;
+    width: 25%;
 }
 }
