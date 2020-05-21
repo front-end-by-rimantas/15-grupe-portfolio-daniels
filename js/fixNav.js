@@ -1,6 +1,6 @@
 window.onscroll = function() {nav_position()};
 
-let header = document.querySelector('header').offsetHeight;
+let header = document.querySelector('.hero').offsetHeight;
 let nav = document.querySelector('.nav');
 
 function nav_position() {
