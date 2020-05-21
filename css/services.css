@@ -41,6 +41,7 @@
     padding: 35px;
     background-color:white;
     margin: 20px;
+    box-shadow: 0 0 15px rgb(226, 226, 226);
 }
 .services-box > i {
     display: inline-block;
