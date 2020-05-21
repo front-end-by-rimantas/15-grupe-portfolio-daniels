@@ -9,7 +9,7 @@ const portfolio = [
   {
     img: "./img/portfolio/2.jpg",
     title: "Web Design",
-    category: ["all", "design"],
+    category: ["all", "graphic"],
   },
   {
     img: "./img/portfolio/3.jpg",
