@@ -1,0 +1,66 @@
+ .menu{
+        display:none;
+    }
+
+    @media (max-width: 700px) {
+        .menu {
+            display: inline-block;
+        }
+            .menu > .fa {
+                display: inline-block;
+                color: white;
+                font-size: 25px;
+                line-height: 22px;
+                position:relative;
+                position:fixed;
+                top:0;
+                right:0;
+                margin-right:20px;
+                margin-top:20px;
+                
+            }
+        .nav a {
+            display: none;
+        }
+        .nav :last-child{
+            display:inline-block;
+            position:fixed;
+            top:0;
+            margin-top: 10px;
+            margin-left: -80px;
+            
+        }
+    }
+    .kitasNav.menu{
+        display:none;
+    }
+
+    @media (max-width: 700px) {
+        .kitasNav.menu {
+            display: inline-block;
+        }
+            .kitasNav >.menu > .fa {
+                display: inline-block;
+                color:black;
+                font-size: 25px;
+                line-height: 22px;
+                position:relative;
+                position:fixed;
+                top:0;
+                right:0;
+                margin-right:20px;
+                margin-top:20px;
+                
+            }
+        .kitasNav a {
+            display: none;
+        }
+        .kitasNav :last-child{
+            display:inline-block;
+            position:fixed;
+            top:0;
+            margin-top: 10px;
+            margin-left: -80px;
+            
+        }
+    }

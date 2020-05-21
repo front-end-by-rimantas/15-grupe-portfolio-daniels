@@ -145,54 +145,5 @@ html {
    border-radius: 50%;
    background: rgba(0,0,0,0.5);
 }
-@media (max-width: 700px) {
-    .nav {
-        display:inline;
-        width: 100%;
-        margin:0;
-        padding:0;
-        float:right;
-    }
-    .nav > a{
-        display:inline-block;
-        width: 12%;
-        margin:0;
-        padding-right: 3;
-    }
-    .nav > :first-child{
-        margin:0;
-    }
-    .nav > :last-child {
-        margin: 0;
-        font-size: 17px;
-              
-    }
-    .nav > :nth-child(7) {
-        border:none;
-        margin:0;
-        padding:0;
-        float:left;
-        width:12%;
-    }
-}
-@media (max-width: 500px) {
-    .nav {
-        display:inline;
-        width: 100%;
-        margin:0;
-        padding:0;
-        float:right;
-        border:none;
-    }
-    .nav > a{
-        display:inline-block;
-        width: 100%;
-        margin:0;
-        padding:0;
-    }
-    .nav > :last-child {
-        display:inline-block;
-        margin: 0;       
-    }
-}
+
 
