@@ -63,8 +63,62 @@
     width: 100%;
     
 }
+.portfolio > .gallery >div {
+    position: relative;
+}
 
+.overlay {
+    position: absolute;
+    background-color: rgba(255,255,255, 0.98);
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    opacity: 0;
+    padding-top: 150px;
+    transition: 0.5s;
+    /* transform: translateY(0px); */
 
+}
+.overlay:hover{ 
+    opacity: 1;
+}
+.gallery-title {
+    font-size: 14px;
+    position: relative;
+    font-weight: 600;
+    transition: all .5s;
+    margin-bottom: 40px;
+
+}
+.chain, .zoom-in{
+    display: inline-block;
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.chain:hover, .zoom-in:hover {
+    display: inline-block;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.fa-search-plus:before{
+    display: inline-block;
+    margin-top: 8px;
+}
+.fa-chain-broken:before {
+    display: inline-block;
+    margin-top: 8px;
+}
 
 @media (max-width: 1400px){
 

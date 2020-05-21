@@ -3,32 +3,32 @@
 const portfolio = [
   {
     img: "./img/portfolio/1.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "brand"],
   },
   {
     img: "./img/portfolio/2.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "design"],
   },
   {
     img: "./img/portfolio/3.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "design"],
   },
   {
     img: "./img/portfolio/4.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "brand"],
   },
   {
     img: "./img/portfolio/5.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "graphic"],
   },
   {
     img: "./img/portfolio/6.jpg",
-    title: "Design",
+    title: "Web Design",
     category: ["all", "design"],
   },
 ];
@@ -43,7 +43,6 @@ const filterbuttons=document.querySelectorAll('.filter-buttons span');
     btn.classList.toggle("active");
 
   const category = btn.dataset.category
-  console.log(category)
   galleryImages(category)
       
   } )
@@ -60,11 +59,13 @@ function galleryImages(filter) {
     HTML = `
     <div>
         <img src="${image.img}" alt="images" data-category="${image.category}" class="img">
-            <div class="gallery-item">
+            <div class="overlay">
                 <div>
-                <span> ${image.title} <span>
-                <i class="chain fa fa-chain-broken" ></i>
+                <span class="gallery-title"> ${image.title} <span>
+                <div class"gallery-icons">
+                <i class="chain fa fa-chain-broken" aria-hidden="true" ></i>
                 <i class="zoom-in fa fa-search-plus" ></i>
+                </div>
                 </div>
             </div>
     </div>`;
