@@ -60,6 +60,7 @@ html {
     margin-top: 50px;
     z-index: 3;
     box-sizing: content-box;
+    
 }
 .nav > a{
     display:inline-block;
@@ -69,6 +70,7 @@ html {
     color:white;
     margin-right: 40px;
     float:right;
+
 }
 .nav > :last-child{
     float:left;
@@ -77,14 +79,14 @@ html {
     margin-left: 100px;
     line-height: 1;
 }
-.nav > :first-child{
+.nav >:first-child{
     margin-right: 120px;
 }
-.nav > :nth-child(7){
+.nav > :nth-child(8){
     border-bottom: 2px solid white;
 }
 .kitasNav {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,7 +103,8 @@ html {
     color:black;
     margin-right: 40px;
     float:right;
-    margin-top: 20px;
+    padding-top: 20px;
+    
 }
 .kitasNav > :last-child{
     float:left;
@@ -110,11 +113,11 @@ html {
     margin-left: 100px;
     line-height: 1;
 }
-.kitasNav > :first-child{
+.kitasNav >:first-child{
     margin-right: 120px;
 }
-.kitasNav > :nth-child(7){
-    border-bottom: 2px solid white;
+.kitasNav > :nth-child(8){
+    border-bottom: 2px solid black;
 }
 .hero > .intro{
     width:100%;

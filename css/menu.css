@@ -2,7 +2,14 @@
         display:none;
     }
 
+    
+    @media (min-width: 701px) {
+        .nav {
+            color: white;
+        }
+    }
     @media (max-width: 700px) {
+
         .menu {
             display: inline-block;
         }
@@ -17,7 +24,7 @@
                 right:0;
                 margin-right:20px;
                 margin-top:20px;
-                
+                cursor: pointer;    
             }
         .nav a {
             display: none;
@@ -27,10 +34,23 @@
             position:fixed;
             top:0;
             margin-top: 10px;
-            margin-left: -80px;
-            
+            margin-left: -80px;      
         }
     }
+    .dropBox{
+        overflow:visible !important;
+        display:block !important;
+        width:100%;
+        color:black;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 200;
+        font-size: 20px;   
+        padding-top: 30px;
+    
+    }
+
     .kitasNav.menu{
         display:none;
     }
@@ -50,6 +70,7 @@
                 right:0;
                 margin-right:20px;
                 margin-top:20px;
+                cursor: pointer;
                 
             }
         .kitasNav a {
@@ -60,7 +81,19 @@
             position:fixed;
             top:0;
             margin-top: 10px;
-            margin-left: -80px;
-            
+            margin-left: -80px; 
         }
     }
+        .dropBox >.kitasNav{
+            display:block;
+            width:100%;
+            color:black;
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 200;
+            font-size: 20px;
+            padding-top: 20px;
+    
+        }
+    
