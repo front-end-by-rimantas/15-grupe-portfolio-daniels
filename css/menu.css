@@ -14,7 +14,6 @@
             display: inline-block;
         }
             .menu > .fa {
-                display: inline-block;
                 color: white;
                 font-size: 25px;
                 line-height: 22px;
@@ -26,28 +25,53 @@
                 margin-top:20px;
                 cursor: pointer;    
             }
-        .nav a {
+            .nav > .select{
+                margin:0;
+        
+            }
+        .nav > .select a {
             display: none;
+            margin:0;
+            webkit-transition:1s;
+            -moz-transition:1s;
+            -ms-transition:1s;
+            -o-transition:1s;
+            transition:1s;
         }
-        .nav :last-child{
+        .nav > .select :last-child{
+            margin:0;
+        }
+        .nav >  :last-child{
             display:inline-block;
             position:fixed;
             top:0;
             margin-top: 10px;
-            margin-left: -80px;      
+            margin-left: 20px;      
         }
+        .nav> .select a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+          }
     }
-    .dropBox{
-        overflow:visible !important;
+    .dropBox {
+        text-decoration: none !important;
+        margin:0;
+        width:100vw;
+        overflow: visible;
         display:block !important;
-        width:100%;
-        color:black;
+        color:black !important;
         background-color: white;
         text-align: center;
         cursor: pointer;
         font-weight: 200;
         font-size: 20px;   
         padding-top: 30px;
+        webkit-transition:1s;
+        -moz-transition:1s;
+        -ms-transition:1s;
+        -o-transition:1s;
+        transition:1s;
     
     }
 
@@ -63,7 +87,6 @@
                 display: inline-block;
                 color:black;
                 font-size: 25px;
-                line-height: 22px;
                 position:relative;
                 position:fixed;
                 top:0;
@@ -73,27 +96,50 @@
                 cursor: pointer;
                 
             }
-        .kitasNav a {
+            .kitasNav > .select{
+                margin:0;
+      
+            }
+        .kitasNav > .select a {
             display: none;
+            margin:0;
+            webkit-transition:1s;
+            -moz-transition:1s;
+            -ms-transition:1;
+            -o-transition:1s;
+            transition:1s;
         }
-        .kitasNav :last-child{
+        .kitasNav >  :last-child{
             display:inline-block;
             position:fixed;
             top:0;
-            margin-top: 10px;
-            margin-left: -80px; 
+            margin-top:0;
+            margin-left: 20px;      
         }
+        .kitasNav> .select a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+          }
     }
         .dropBox >.kitasNav{
-            display:block;
+            overflow: hidden;
+            display:block !important;
             width:100%;
-            color:black;
+            height:300px;
+            color:black!;
             background-color: white;
             text-align: center;
             cursor: pointer;
             font-weight: 200;
             font-size: 20px;
             padding-top: 20px;
+            margin-top: 20px;
+            webkit-transition:1s;
+            -moz-transition:1s;
+            -ms-transition:1s;
+            -o-transition:1s;
+             transition:1s;
     
         }
-    
+        

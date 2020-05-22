@@ -31,7 +31,7 @@ var TxtRotate = function(el, toRotate, period) {
     } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
-      delta = 500;
+      delta = 400;
     }
   
     setTimeout(function() {
