@@ -20,21 +20,23 @@
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <column>Daniels</column>
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Daniels</title>
 </head>
-<body>
+<body onresize="myFunction2()">
 <!-- HEADER -->
     <div>
-        <header id="section7">
+        <header id="section7" >
         <nav class="container nav" id="navlist">
-            <a href="#section1">Contact</a>
-            <a href="#section2">Blog</a>
-            <a href="#section3">Clients</a>
-            <a href="#section4">Works</a>
-            <a href="#section5">Services</a>
-            <a href="#section6">About</a>
-            <a href="#section7">Home</a>
-            <a href="#">Daniels</a>
+            <div class="menu" ><i class="fa fa-bars" onclick="myFunction()"></i></div>
+            <a  href="#section1">Contact</a>
+            <a  href="#section2">Blog</a>
+            <a  href="#section3">Clients</a>
+            <a  href="#section4">Works</a>
+            <a  href="#section5">Services</a>
+            <a  href="#section6">About</a>
+            <a  href="#section7">Home</a>
+            <a  href="#">Daniels</a></div>
         </nav>
         <div class="container hero">
             <div class ="intro">
@@ -42,7 +44,7 @@
                 <p>I Am
                     <span
                        class="txt-rotate"
-                       data-period="00"
+                       data-period="2000"
                        data-rotate='[ "Lary Daniels", "Developer", "Designer" ]'>
                     </span>
                   </p>
@@ -71,7 +73,7 @@
                     <div class="bar" style="width:95%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="column">Web Design</div>
+                            <div class="title">Web Design</div>
                             <div class="value">95%</div>
                             <!-- </div> -->
                     </div>
@@ -84,7 +86,7 @@
                     <div class="bar" style="width:80%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="column">Branding</div>
+                            <div class="title">Branding</div>
                             <div class="value">80%</div>
                         <!-- </div> -->
                     </div>
@@ -97,7 +99,7 @@
                     <div class="bar" style="width:90%;">
                     <div class="loading">
                         <!-- <div class="text"> -->
-                            <div class="column">Development</div>
+                            <div class="title">Development</div>
                             <div class="value">90%</div>
                             <!-- </div> -->
                     </div>
@@ -122,15 +124,13 @@
 <div class="container portfolio" id="section4">
     <h2>Portfolio.</h2>
            <div class="filter-buttons" id="filtering">
-               <span data-id="all" class="active">All</span>
-               <span data-id="brand">Brand</span>
-               <span data-id="design">Design</span>
-               <span data-id="graphic">Graphic</span>
-           </div>
-        <div class="gallery">
-            <div class="items">
-
-            </div>
+               <span data-category="all" class="active">All</span>
+               <span data-category="brand">Brand</span>
+               <span data-category="design">Design</span>
+               <span data-category="graphic">Graphic</span>
+    </div>
+        <div class="gallery gallery-items">
+            <div class="overlay"></div>
         </div>
     </div>
     <!-- *****************Testimonials : -->
@@ -290,5 +290,6 @@
     <script src="./js/runningNumbers.js"></script>
     <script src="./js/scrolSpy.js"></script>
     <script src="./js/testimonials.js"></script>
+    <script src="./js/menuRender.js"></script>
 </body>
 </html>
