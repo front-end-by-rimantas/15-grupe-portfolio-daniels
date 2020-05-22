@@ -3,6 +3,7 @@ body {
     padding:0;
     height: 100vh;
     position:relative;
+    font-family: 'Poppins', sans-serif;
 }
 html {
     scroll-behavior: smooth
@@ -64,6 +65,7 @@ html {
 .nav > .select{
     float:right;
     margin-right:60px;
+    transition:all 1s;
 }
 .nav > .select a{
     text-decoration: none;
@@ -71,6 +73,7 @@ html {
     font-weight: 400;
     color:white;
     margin-right: 40px;
+    transition:all 1s;
 }
 .nav > .select :first-child{
     border-bottom: 2px solid white;
@@ -99,6 +102,8 @@ html {
 .kitasNav > .select{
     float:right;
     margin-right: 60px;
+    transition:all 1s;
+    
 }
 .kitasNav > .select a{
     display:inline-block;
@@ -108,8 +113,10 @@ html {
     color:black;
     margin-right: 40px;
     padding-top: 20px;
+    transition:all 1s;
     
 }
+
 .kitasNav > .select :first-child{
     border-bottom: 2px solid black;
 }
@@ -121,6 +128,9 @@ html {
     margin-left: 80px;
     line-height: 2;
     color:black;
+}
+.hero{
+    padding-bottom: 40px;
 }
 .hero > .intro{
     width:100%;
@@ -151,5 +161,6 @@ html {
    border-radius: 50%;
    background: rgba(0,0,0,0.5);
 }
+
 
 
