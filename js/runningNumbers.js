@@ -1,5 +1,5 @@
-"use strict"
-let places = document.querySelectorAll('.counter');
+
+/*let places = document.querySelectorAll('.counter');
 for (let i = 0; i < places.length; i++) {
     animateValue(places[i], 1000);
 }
@@ -15,7 +15,18 @@ function animateValue(element, duration) {
             clearInterval(timer);
         }
     }, stepTime);
-}
+}*/
+$('.counter').each(function () {
+    $(this).prop('counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
 
 
 

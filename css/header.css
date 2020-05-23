@@ -65,19 +65,22 @@ html {
 .nav > .select{
     float:right;
     margin-right:60px;
-    transition:all 1s;
 }
+
 .nav > .select a{
     text-decoration: none;
     font-size: 17px;
     font-weight: 400;
     color:white;
     margin-right: 40px;
-    transition:all 1s;
 }
-.nav > .select :first-child{
-    border-bottom: 2px solid white;
+.nav > .select > a.selected{
+    border-bottom: solid 3px white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
 }
+
 .nav > :last-child{
     text-decoration: none;
     color:white;
@@ -102,8 +105,7 @@ html {
 .kitasNav > .select{
     float:right;
     margin-right: 60px;
-    transition:all 1s;
-    
+      
 }
 .kitasNav > .select a{
     display:inline-block;
@@ -113,13 +115,16 @@ html {
     color:black;
     margin-right: 40px;
     padding-top: 20px;
-    transition:all 1s;
+  
     
 }
+.kitasNav > .select > a.selected{
+  border-bottom: solid 3px #000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:100% 50%
+  }
 
-.kitasNav > .select :first-child{
-    border-bottom: 2px solid black;
-}
 .kitasNav > :last-child{
     text-decoration: none;
     position:fixed;
@@ -161,6 +166,7 @@ html {
    border-radius: 50%;
    background: rgba(0,0,0,0.5);
 }
+
 
 
 
