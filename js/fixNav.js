@@ -19,5 +19,11 @@ for (var i = 0; i < dropdownItems.length-1; i++) {
 }
     nav.classList.remove("kitasNav");
     nav.classList.add("nav");
+
   }
 }
+function spalva() {
+ document.querySelector("#navlist").classList.add("aktyvi");
+ console.log(hi);
+}
+
