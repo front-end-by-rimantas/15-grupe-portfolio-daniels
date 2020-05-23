@@ -96,6 +96,11 @@
                 cursor: pointer;
                 
             }
+            .kitasNav > .select > a.selected{
+              display:none;
+                  
+              }
+
             .kitasNav > .select{
                 margin:0;
       

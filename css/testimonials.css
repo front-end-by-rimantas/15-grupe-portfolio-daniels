@@ -31,9 +31,11 @@
             margin: 50px 0 20px;
         }
         .testimonials_p {
+            width:80%;
             color: #748182;
             font-size: 17px;
             line-height: 25px;
+            margin-left:10%;
         }
         .testimonials_h6 {
             margin: 30px 0 5px;
