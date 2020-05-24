@@ -30,22 +30,17 @@ let blogData = [
 let blogsite = ``;
 
 blogData.forEach(dalykai => {
-    blogsite += `<div id="slider" class="slider">
-                    <div class="wrapper">
-                        <div id="slides" class="slides">
-                            <div class="slide wordpress">
-                                <div class="img-box">
-                                    <img src="${dalykai.img}" class="blog-img">
-                                </div>
-                                <div class="text-box">
-                                    <p class="trends">${dalykai.p1}</p>
-                                    <h4 class="trends-text">${dalykai.h4}</h4>
-                                    <p class="read-more">${dalykai.p1}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>` 
+    blogsite += `
+        <div class="slide wordpress">
+            <div class="img-box">
+                <img src="${dalykai.img}" class="blog-img">
+            </div>
+            <div class="text-box">
+                <p class="trends">${dalykai.p1}</p>
+                <h4 class="trends-text">${dalykai.h4}</h4>
+                <p class="read-more">${dalykai.p1}</p>
+            </div>
+        </div>` 
                 })
 
-document.querySelector('.blogContainer').innerHTML += blogsite
+document.querySelector('.slides').innerHTML += blogsite

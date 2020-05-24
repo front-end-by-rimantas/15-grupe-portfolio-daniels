@@ -4,6 +4,7 @@ var slider = document.getElementById('slider'),
     sliderItems = document.getElementById('slides'),
     prev = document.getElementById('prev'),
     next = document.getElementById('next');
+    sliderrr = document.querySelector('.slide');
 
 let wordpress = createSlide('wordpress');
 let trends = createSlide('trends');
