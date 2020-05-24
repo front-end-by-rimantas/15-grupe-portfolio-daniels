@@ -147,12 +147,17 @@ html {
   
 }
 .hero > .intro > p{
-    font-weight: 100;
+    font-weight: lighter;
     margin: 0.4em 0;
     color: white;
-    font-size: 70px;
     line-height: 1;
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    
+}
+.hero >.intro span{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 .hero > .intro >.row .fa{
    display:inline;
@@ -166,7 +171,15 @@ html {
    border-radius: 50%;
    background: rgba(0,0,0,0.5);
 }
-
+@media (max-width: 700px) {
+   .hero >.intro p {
+       font-size: 30px;
+       
+   }
+   .hero > .intro span{
+       font-size: 30px;
+   }
+}
 
 
 

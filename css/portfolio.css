@@ -61,12 +61,14 @@
 
 }
 .portfolio > .gallery {
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 .portfolio > .gallery > div > img {
     width: 100%;
+    
+    
 }
 .portfolio > .gallery > div > img:hover {
     width: 100%;
