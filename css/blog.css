@@ -22,7 +22,7 @@
 .slides {
     display: flex;
     position: relative;
-    left: -1445px;
+    left: -350px;
 	top: 0;
 	width: 10000px;
 	transition: 1s;
