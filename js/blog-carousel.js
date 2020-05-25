@@ -23,18 +23,25 @@ function slide(wrapper, items, prev, next) {
   allowShift = true;
   
 
-  let wordpress = createSlide('firstSlide', 'pirma');
-  let trends = createSlide('lastSlide', 'paskutine');
-  sliderItems.appendChild(wordpress);
-  sliderItems.appendChild(trends);
+  // let wordpress = createSlide('slide', 'pirma');
+  // let trends = createSlide('lastSlide', 'paskutine');
+  // sliderItems.appendChild(wordpress);
+  // sliderItems.appendChild(trends);
+
+  // let newDoc = document.createElement('div');
+  //     newDoc.className += ('slider');
+  //     newDoc.appendChild(document.createTextNode('blabla'));
+  //     document.querySelector('.slides').appendChild(newDoc);
+  //     console.log(newDoc)
 
 
-function createSlide(className, nodeText) {
-  let slide = document.createElement('div');
-  slide.classList.add('slide', className);
-  slide.innerHTML = nodeText;
-  return slide;
-}
+// function createSlide(className, nodeText) {
+//   let slide = document.createElement('div');
+//   slide.className +=('slide', className);
+//   slide.classList.add('img-box')
+//   slide.innerHTML = nodeText;
+//   return slide;
+// }
 
   
   const kiekPrasuktRatuku = 4;
