@@ -3,6 +3,7 @@
     text-align: center;
     width: 1200px;   
     margin: 0px calc(50% - 600px);
+     padding-top:60px;
 }
 
  .portfolio {
@@ -73,6 +74,8 @@
 }
 .portfolio > .gallery > div > img {
     width: 100%;
+    
+    
 }
 .portfolio > .gallery > div > img:hover {
     width: 100%;
