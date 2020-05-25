@@ -31,7 +31,7 @@ let blogsite = ``;
 
 blogData.forEach(dalykai => {
     blogsite += `
-        <div class="slide wordpress">
+        <div class="slide">
             <div class="img-box">
                 <img src="${dalykai.img}" class="blog-img">
             </div>

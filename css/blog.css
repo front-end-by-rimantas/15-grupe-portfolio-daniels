@@ -21,10 +21,10 @@
 }
 .slides {
     display: flex;
-		position: relative;
-		top: 0;
-		width: 99999px;
-		transition: 1s;
+	position: relative;
+	top: 0;
+	width: 99999px;
+	transition: 1s;
 }
     .slides:hover {
         transition: none;
@@ -92,7 +92,7 @@
     padding: 20px 0;
     display: inline-block;
 }
-    .slider-dot {
+    .prev {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -101,7 +101,16 @@
         display: inline-block;
         cursor: pointer;
     }
-    .slider-dot:hover {
+    .next {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+        background-color: #D6D6D6;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .prev:hover, .next:hover {
         background-color: #869791;
     }
 

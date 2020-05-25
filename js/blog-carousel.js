@@ -4,63 +4,58 @@ var slider = document.getElementById('slider'),
     sliderItems = document.getElementById('slides'),
     prev = document.getElementById('prev'),
     next = document.getElementById('next');
-    sliderrr = document.querySelector('.slide');
-
-let wordpress = createSlide('wordpress');
-let trends = createSlide('trends');
-let themeforest = createSlide('themeforest');
-let skalbenke = createSlide('skalbenke')
-sliderItems.appendChild(wordpress);
-sliderItems.appendChild(trends);
-sliderItems.appendChild(themeforest)
-sliderItems.appendChild(skalbenke);
-
-const kiekPrasuktRatuku = 4;
-
-function createSlide(className, nodeText) {
-    let slide = document.createElement('div');
-    slide.classList.add('slide', className);
-    slide.innerHTML = nodeText;
-    return slide;
-}
 
 
 function slide(wrapper, items, prev, next) {
   var posX1 = 0,
-      posX2 = 0,
-      posInitial,
-      posFinal,
-      threshold = 100,
-      slides = items.getElementsByClassName('slide'),
-      slidesLength = slides.length,
-      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
-      firstSlide = slides[0],
-      preLast = slides[slidesLength - 2],
-      lastSlide = slides[slidesLength - 1],
-      cloneFirst = firstSlide.cloneNode(true),
-      cloneLast = lastSlide.cloneNode(true),
-      index = 0,
-      allowShift = true;
+  posX2 = 0,
+  posInitial,
+  posFinal,
+  threshold = 100,
+  slides = items.getElementsByClassName('slide'),
+  slidesLength = slides.length,
+  slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
+  firstSlide = slides[0],
+  lastSlide = slides[slidesLength - 1],
+  cloneFirst = firstSlide.cloneNode(true),
+  cloneLast = lastSlide.cloneNode(true),
+  index = 0,
+  allowShift = true;
   
 
-  for (let i = 0; i < kiekPrasuktRatuku; i++) {
-    let naujasWordpress = wordpress.cloneNode(true);
-    let naujasTrends = trends.cloneNode(true);
-    let naujasThemeforest = themeforest.cloneNode(true);
-    let naujasSkalbenke = skalbenke.cloneNode(true);
-    naujasWordpress.innerHTML = `${i+1}-asis zalias`;
-    naujasWordpress.id = `kurtas${i+1}_zalias`;
-    naujasTrends.innerHTML = `${i+1}-asis pink`;
-    naujasTrends.id = `kurtas${i+1}_pink`;
-    naujasThemeforest.innerHTML = `${i+1}-asis purpur`;
-    naujasThemeforest.id = `kurtas${i+1}_purpur`;
-    naujasSkalbenke.innerHTML = `${i+1}_gray`;
-    naujasSkalbenke.id = `kurtas${i+1}_gray`;
-    sliderItems.appendChild(naujasWordpress);
-    sliderItems.appendChild(naujasTrends);
-    sliderItems.appendChild(naujasThemeforest);
-    sliderItems.appendChild(naujasSkalbenke);
+  let wordpress = createSlide('firstSlide', 'pirma');
+  let trends = createSlide('lastSlide', 'paskutine');
+  sliderItems.appendChild(wordpress);
+  sliderItems.appendChild(trends);
+
+
+function createSlide(className, nodeText) {
+  let slide = document.createElement('div');
+  slide.classList.add('slide', className);
+  slide.innerHTML = nodeText;
+  return slide;
 }
+
+  
+  const kiekPrasuktRatuku = 4;
+//   for (let i = 0; i < kiekPrasuktRatuku; i++) {
+//     let naujasWordpress = wordpress.cloneNode(true);
+//     let naujasTrends = trends.cloneNode(true);
+//     let naujasThemeforest = themeforest.cloneNode(true);
+//     let naujasSkalbenke = skalbenke.cloneNode(true);
+//     naujasWordpress.innerHTML = `${i+1}-asis zalias`;
+//     naujasWordpress.id = `kurtas${i+1}_zalias`;
+//     naujasTrends.innerHTML = `${i+1}-asis pink`;
+//     naujasTrends.id = `kurtas${i+1}_pink`;
+//     naujasThemeforest.innerHTML = `${i+1}-asis purpur`;
+//     naujasThemeforest.id = `kurtas${i+1}_purpur`;
+//     naujasSkalbenke.innerHTML = `${i+1}_gray`;
+//     naujasSkalbenke.id = `kurtas${i+1}_gray`;
+//     sliderItems.appendChild(naujasWordpress);
+//     sliderItems.appendChild(naujasTrends);
+//     sliderItems.appendChild(naujasThemeforest);
+//     sliderItems.appendChild(naujasSkalbenke);
+// }
 
   wrapper.classList.add('loaded');
   
@@ -73,8 +68,8 @@ function slide(wrapper, items, prev, next) {
   items.addEventListener('touchmove', dragAction);
   
   // Click events
-//   prev.addEventListener('click', function () { shiftSlide(-1) });
-//   next.addEventListener('click', function () { shiftSlide(1) });
+  prev.addEventListener('click', function () { shiftSlide(-1) });
+  next.addEventListener('click', function () { shiftSlide(1) });
 
   
   
