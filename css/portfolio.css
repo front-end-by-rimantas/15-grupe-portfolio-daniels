@@ -1,11 +1,16 @@
-.portfolio {
+.section {
     display: inline-block;
     text-align: center;
-    width: 1400px;   
-    margin:70px calc(50% - 700px);
-    padding-top: 60px;
+    width: 1200px;   
+    margin: 0px calc(50% - 600px);
+     padding-top:60px;
 }
 
+ .portfolio {
+     display: inline-block;
+     text-align: center;
+     
+ }
 
 .portfolio > h2 {
     font-size: 3.25rem;
@@ -44,25 +49,26 @@
 .portfolio > .filter-buttons > span {
     display: inline-block;
     justify-content: center;
-    margin: 0 35px;
+    margin: 0 18px;
+    position: relative;
     color: #222;
     font-size: 1.25rem;
     cursor: pointer;
     font-weight: 600;
 }
 
+
 .portfolio > .filter-buttons > span.active::after {
     content: '';
     display: block;
-    height: 2px;
+    height: 3px;
+    transition: all 0.5s;
     width: 85%;
     background: black;
-    z-index: -1;
-    transition: all 1s;
-
+    opacity: 88%;
 }
-.portfolio > .gallery {
-    display:grid;
+.gallery {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
@@ -82,12 +88,11 @@
 .overlay {
     position: absolute;
     background-color: rgba(255,255,255, 0.98);
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    top: 2%;
+    width: 96%;
+    height: 96%;
+    left: 1.5%;
     opacity: 0;
-    padding-top: 150px;
     transition: 0.5s;
     /* transform: translateY(0px); */
 
@@ -95,12 +100,17 @@
 .overlay:hover{ 
     opacity: 1;
 }
-.gallery-title {
-    font-size: 14px;
-    position: relative;
+.overlay > div { 
+    margin-top: 25%;
     font-weight: 600;
+
+
+}
+.overlay:hover > .gallery-title {
+    font-size: 14px;
     transition: all .5s;
     margin-bottom: 40px;
+
 
 }
 .chain, .zoom-in{
@@ -131,46 +141,48 @@
     display: inline-block;
     margin-top: 8px;
 }
-/* 
-@media (max-width: 1400px){
 
-
-    .portfolio > .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+@media ( max-width: 1300px ) {
+    .section  {
+        width: 1150px;
+        margin: 0 calc(50% - 575px);
+    }
 }
-.portfolio > .gallery > div > img {
-    width:50%;
+@media ( max-width: 1200px ) {
+    .section  {
+        width: 1000px;
+        margin: 0 calc(50% - 500px);
+    }
 }
-.portfolio > .gallery > div > img:hover {
-    width:50%;
+@media ( max-width: 1024px ) {
+    .section  {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
+    }
 }
-} */
-@media (max-width: 1400px){
-
-
-    .portfolio > .gallery {
-       display: grid;
-       grid-template-columns: 1fr;
-}
-.portfolio > .gallery > div > img {
-    width:50%;
-}
-.portfolio > .gallery > div > img:hover {
-    width:50%;
-}
-}
-@media (max-width: 1000px){
-
-
-    .portfolio > .gallery {
+@media ( max-width: 768px ) {
+    .gallery  {
         display: grid;
         grid-template-columns: 1fr;
-}
-.portfolio > .gallery > div > img {
-    width: 25%;
-}
-.portfolio > .gallery > div > img:hover {
-    width: 25%;
-}
-}
+    }
+    .portfolio > .gallery > div > img {
+        width: 100%;
+    }
+    .portfolio > .gallery > div > img:hover {
+        width: 100%;
+    }
+    }
+
+@media ( max-width: 500px ) {
+    .gallery  {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .portfolio > .gallery > div > img {
+        width: 60%;
+    }
+    .portfolio > .gallery > div > img:hover {
+        width: 60%;
+    }
+    }
+
