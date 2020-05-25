@@ -76,5 +76,3 @@ function galleryImages(filter) {
 
 
 galleryImages("all");
-
-
