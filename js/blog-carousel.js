@@ -8,61 +8,36 @@ var slider = document.getElementById('slider'),
 
 function slide(wrapper, items, prev, next) {
   var posX1 = 0,
-  posX2 = 0,
-  posInitial,
-  posFinal,
-  threshold = 100,
-  slides = items.getElementsByClassName('slide'),
-  slidesLength = slides.length,
-  slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
-  firstSlide = slides[0],
-  lastSlide = slides[slidesLength - 1],
-  cloneFirst = firstSlide.cloneNode(true),
-  cloneLast = lastSlide.cloneNode(true),
-  index = 0,
-  allowShift = true;
-  
+      posX2 = 0,
+      posInitial,
+      posFinal,
+      threshold = 100,
+      slides = items.querySelectorAll('.slide'),
+      slidesLength = slides.length,
+      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
+      firstSlide = slides[0],
+      secondSlide = slides[1],
+      thirdSlide = slides[2],
+      lastSlide = slides[slidesLength - 1],
+      cloneFirst = firstSlide.cloneNode(true),
+      cloneSecond = secondSlide.cloneNode(true),
+      cloneThird = thirdSlide.cloneNode(true),
+      cloneLast = lastSlide.cloneNode(true),
+      index = 0,
+      allowShift = true;
 
-  // let wordpress = createSlide('slide', 'pirma');
-  // let trends = createSlide('lastSlide', 'paskutine');
-  // sliderItems.appendChild(wordpress);
-  // sliderItems.appendChild(trends);
+  function myFunction() {
+    var clone1 = cloneFirst;
+    let clone2 = cloneSecond;
+    let clone3 = cloneThird;
 
-  // let newDoc = document.createElement('div');
-  //     newDoc.className += ('slider');
-  //     newDoc.appendChild(document.createTextNode('blabla'));
-  //     document.querySelector('.slides').appendChild(newDoc);
-  //     console.log(newDoc)
+    document.querySelector(".slides").appendChild(clone1);
+    document.querySelector(".slides").appendChild(clone2);
+    document.querySelector(".slides").appendChild(clone3);
+  } 
+  myFunction()
+      
 
-
-// function createSlide(className, nodeText) {
-//   let slide = document.createElement('div');
-//   slide.className +=('slide', className);
-//   slide.classList.add('img-box')
-//   slide.innerHTML = nodeText;
-//   return slide;
-// }
-
-  
-  const kiekPrasuktRatuku = 4;
-//   for (let i = 0; i < kiekPrasuktRatuku; i++) {
-//     let naujasWordpress = wordpress.cloneNode(true);
-//     let naujasTrends = trends.cloneNode(true);
-//     let naujasThemeforest = themeforest.cloneNode(true);
-//     let naujasSkalbenke = skalbenke.cloneNode(true);
-//     naujasWordpress.innerHTML = `${i+1}-asis zalias`;
-//     naujasWordpress.id = `kurtas${i+1}_zalias`;
-//     naujasTrends.innerHTML = `${i+1}-asis pink`;
-//     naujasTrends.id = `kurtas${i+1}_pink`;
-//     naujasThemeforest.innerHTML = `${i+1}-asis purpur`;
-//     naujasThemeforest.id = `kurtas${i+1}_purpur`;
-//     naujasSkalbenke.innerHTML = `${i+1}_gray`;
-//     naujasSkalbenke.id = `kurtas${i+1}_gray`;
-//     sliderItems.appendChild(naujasWordpress);
-//     sliderItems.appendChild(naujasTrends);
-//     sliderItems.appendChild(naujasThemeforest);
-//     sliderItems.appendChild(naujasSkalbenke);
-// }
 
   wrapper.classList.add('loaded');
   
@@ -82,8 +57,15 @@ function slide(wrapper, items, prev, next) {
   
   // Transition events
   items.addEventListener('transitionend', checkIndex);
+  // items.addEventListener('transitionend', myFunction);
+  // function testFunction(e) {
+  //   if (e.target.matches('.slide')) {
+  //     console.log(e.target.innerHTML);
+  //   }
+  // }
+  // sliderItems.addEventListener('transitionend', testFunction)
 
-
+  /*************/
   let initSlides = setInterval(function(){shiftSlide(1);}, 1500);
   $('#slides').mouseover(function(){
     clearInterval(initSlides);
@@ -92,7 +74,6 @@ function slide(wrapper, items, prev, next) {
   })
 
   // items.style.transition = 'all 1s';
-
 
 
   
@@ -158,7 +139,7 @@ function slide(wrapper, items, prev, next) {
     
   function checkIndex (){
     items.classList.remove('shifting');
-
+   
     if (index == -1) {
       items.style.left = -(slidesLength * (slideSize-1)) + "px";
       index = slidesLength -1
