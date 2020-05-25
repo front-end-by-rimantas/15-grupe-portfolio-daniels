@@ -22,10 +22,8 @@
     font-weight: 600;
 }
 .portfolio > h2::after {
-    position: absolute;
     background: url(../img/dots.png);
     content: "";
-    top: 10px;
     right: 5px;
     position: absolute;
     top: 25px;
@@ -57,14 +55,21 @@
 }
 
 
-.portfolio > .filter-buttons > span.active::after {
+.portfolio > .filter-buttons > span:after {
+    display: inline-block;
     content: '';
-    display: block;
-    height: 3px;
-    transition: all 0.5s;
-    width: 85%;
-    background: black;
-    opacity: 88%;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 100%;
+    bottom: -3px;
+    background-color: #111;
+    transition: all 0.3s;
+}
+
+.portfolio .filter-buttons > span.active::after {
+    left: 0;
+    right: 15%;
 }
 .gallery {
     display: grid;
