@@ -62,7 +62,7 @@ function galleryImages(filter) {
             <div class="overlay">
                 <div>
                 <span class="gallery-title"> ${image.title} <span>
-                <div class"gallery-icons">
+                <div class="gallery-icons">
                 <i class="chain fa fa-chain-broken" aria-hidden="true" ></i>
                 <i class="zoom-in fa fa-search-plus" ></i>
                 </div>
@@ -90,7 +90,6 @@ for (let i=0; i<zoom.length;i++){
       const image = images[i]
     lightbox.classList.add('active')
     const img = document.createElement('img')
-    console.log(img)
     img.src = image.src
     while (lightbox.firstChild) {
       lightbox.removeChild(lightbox.firstChild)
