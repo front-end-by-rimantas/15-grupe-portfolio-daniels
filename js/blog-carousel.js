@@ -84,17 +84,31 @@ function slide(wrapper, items, prev, next) {
   
   // Transition events
   items.addEventListener('transitionend', checkIndex);
-
+ 
 
   /*************/
-  // let initSlides = setInterval(function(){shiftSlide(1);}, 1500);
-  // $('#slides').mouseover(function(){
-  //   clearInterval(initSlides);
-  // }).mouseout(function(){
-  //   initSlides = setInterval(function(){shiftSlide(1);}, 1500);
-  // })
-  // items.style.transition = 'all 1s';
-
+  let initSlides = setInterval(function(){shiftSlide(1);}, 1500);
+  $('#slides').mouseover(function(){
+    clearInterval(initSlides);
+  }).mouseout(function(){
+    initSlides = setInterval(function(){shiftSlide(1);}, 1500);
+  })
+//   intTest()
+//   function intTest() {
+//   let testSlides = setInterval(testInt, 1);
+//   let testPos = 0;
+//   let testSlide = document.querySelector('.slides');
+//   function testInt() {
+//     if (index == slidesLength-1) {
+//       index = 0;
+//       testSlide.style.left = (posInitial - slideSize - 15 ) + "px";
+//     } else {
+//       index++
+//       testSlide.style.left = (posInitial - slideSize - 15 ) + "px";
+//     }
+//   }
+//   checkIndex()
+// }
 
   
   function dragStart (e) {
@@ -137,7 +151,7 @@ function slide(wrapper, items, prev, next) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
-  
+  shiftSlide()
   function shiftSlide(dir, action) {
     items.classList.add('shifting');
     
@@ -152,7 +166,6 @@ function slide(wrapper, items, prev, next) {
         index--;      
       }
     };
-    
     allowShift = false;
     checkIndex ();
   }
@@ -172,7 +185,7 @@ function slide(wrapper, items, prev, next) {
     
     allowShift = true;
   }
-  console.log(-(0 * slideSize/slideSize))
+  console.log(index)
 }
 
 slide(slider, sliderItems, prev, next);
