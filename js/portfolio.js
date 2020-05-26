@@ -69,10 +69,36 @@ function galleryImages(filter) {
                 </div>
             </div>
     </div>`;
-    gallery.innerHTML += HTML; 
+    gallery.innerHTML += HTML;
+    //beforeened???
    }
   })
 }
 
 
 galleryImages("all");
+
+const lightbox = document.createElement('div')
+lightbox.id = 'lightbox'
+document.body.appendChild(lightbox)
+const images = document.querySelectorAll('.gallery img');
+const zoom = document.querySelectorAll('.zoom-in');
+
+for (let i=0; i<zoom.length;i++){
+  zoom[i].addEventListener('click', e => {
+    for (i=0; i<images.length; i++){
+      const image = images[i]
+    lightbox.classList.add('active')
+    const img = document.createElement('img')
+    console.log(img)
+    img.src = image.src
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild)
+    }
+    lightbox.appendChild(img)
+  } });
+}
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return
+  lightbox.classList.remove('active')
+})
