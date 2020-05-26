@@ -6,13 +6,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/Icon/android-chrome-192x192.png">
-    <link rel="stylesheet" href="./css/progress-bar.css">
-    <link rel="stylesheet" href="./css/about-me.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/running_numbers.css">
@@ -20,7 +21,6 @@
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/menu.css">
     <title>Daniels</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -152,9 +152,9 @@
         </div>
     </div>
     <div class="testimonials_dots" data-selected="midle">
-        <div class="testimonials_dot_first prev" data-option="first"></div>
-        <div class="testimonials_dot_midle" data-option="midle"></div>
-        <div class="testimonials_dot_last next" data-option="last"></div>
+        <div class="testimonials_dot" data-option="first" onclick="currentSlide(1)"></div>
+        <div class="testimonials_dot" data-option="midle" onclick="currentSlide(2)"></div>
+        <div class="testimonials_dot" data-option="last" onclick="currentSlide(3)"></div>
     </div>
     
 </div>
@@ -187,59 +187,19 @@
 
 <!-- ***************OUR Blog : -->
 
-    <section class="blog-container" id="section2">
+    <section class="blogContainer" id="section2">
         <div class="heder">
             <h3>Our Blog.</h3>
         </div>
-        <div id="slider" class="slider">
+         <div id="slider" class="slider">
             <div class="wrapper">
                 <div id="slides" class="slides">
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/1.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Wordpress</p>
-                            <h4 class="trends-text">Top WordPress Themes and Plugins for Hotels, Travel, and</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/2.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Trends</p>
-                            <h4 class="trends-text">Master These Awesome New Skills in March 2018</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/3.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Themeforest</p>
-                            <h4 class="trends-text">The 20 Best Lightroom Presets You Need to Know About</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/4.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Trends</p>
-                            <h4 class="trends-text">Best Design Items to Appeal to the Millennial Generation</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="slider-dots">
-            <div class="slider-dot"><span></span></div>
-            <div class="slider-dot"><span></span></div>
+            <div class="prev" id="prev"></div>
+            <div class="next" id="next"></div>
         </div>
     </section>
 
@@ -252,37 +212,6 @@
                 <h3>Contact Us.</h3>
             </div>
             <div class="contactbox">
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-location-arrow"></i></span>
-                    <h6>Address</h6>
-                    <p>6834 Hollywood Blvd - Los Angeles CA</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-envelope"></i></span>
-                    <h6>Email</h6>
-                    <p>Support@website.com</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-phone"></i></span>
-                    <h6>Phone</h6>
-                    <p>+20 010 2517 8918</p>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Name" class="ehh">
-                    </div>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Email" class="ehh">
-                    </div>
-                </div>
-                <div class="textarea">
-                    <textarea class="yeet" name="message" rows="6" placeholder="Message"></textarea>
-                </div>
-                <div class="btleft">
-                    <input type="submit" value="submit" class="btn">
-                </div>
             </div>
         </div>
     </section>
@@ -290,6 +219,8 @@
             <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
     </footer>
     <div id="loader" class="center"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="./js/scrolSpy.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/fixNav.js"></script>
     <script src="./js/services.js"></script>
@@ -298,9 +229,11 @@
     <script src="./js/headerAnim.js"></script>
     <script src="./js/portfolio.js"></script>
     <script src="./js/runningNumbers.js"></script>
-    <script src="./js/scrolSpy.js"></script>
     <script src="./js/testimonials.js"></script>
     <script src="./js/menuRender.js"></script>
+    <script src="./js/data/blog-data.js"></script>
+    <script src="./js/blog-carousel.js"></script>
     <script src="./js/button.js"></script>
+    <script src="./js/contactdata.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 50) || 1000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -13,7 +13,7 @@ var TxtRotate = function(el, toRotate, period) {
     var fullTxt = this.toRotate[i];
   
     if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      this.txt = fullTxt.substring(0, this.txt.length -1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
@@ -21,7 +21,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   
     var that = this;
-    var delta = 40 ;
+    var delta = 50 ;
   
     if (this.isDeleting) { delta /= 2; }
   
@@ -31,7 +31,7 @@ var TxtRotate = function(el, toRotate, period) {
     } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.loopNum++;
-      delta = 400;
+      delta = 300;
     }
   
     setTimeout(function() {

@@ -3,9 +3,7 @@
 const DOMtestimonials = document.querySelector('.testimonials');
 const DOMtestimonialsDots = DOMtestimonials.querySelector('.testimonials_dots');
 const DOMtestimonialsDiv = DOMtestimonials.querySelector('.testimonials_div');
-const DOMtestimonialsDotFirst = DOMtestimonialsDots.querySelector('.testimonials_dot_first');
-const DOMtestimonialsDotMidle = DOMtestimonialsDots.querySelector('.testimonials_dot_midle');
-const DOMtestimonialsDotLast = DOMtestimonialsDots.querySelector('.testimonials_dot_last');
+
 
 DOMtestimonialsDots.addEventListener('click', selectDot);
 
@@ -13,42 +11,6 @@ function selectDot () {
     const value = event.target.dataset.option;
     event.target.parentElement.setAttribute('data-selected', value);
 }
-/*
-DOMtestimonialsDotFirst.addEventListener('click', generateFirst);
-function generateFirst() {
-    let HTML = ``;
-    HTML = `
-    <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
-    <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-    <h6 class="testimonials_h6">Alex Smith</h6>
-    <p class="envanto">PIRMASIS</p>`
-    
-    DOMtestimonialsDiv.innerHTML = HTML;
-}
-
-DOMtestimonialsDotMidle.addEventListener('click', generateMidle);
-function generateMidle() {
-    let HTML = ``;
-    HTML = `
-    <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
-    <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-    <h6 class="testimonials_h6">Alex Smith</h6>
-    <p class="envanto">VIDURINIS</p>`
-    
-    DOMtestimonialsDiv.innerHTML = HTML;
-}
-DOMtestimonialsDotLast.addEventListener('click', generateLast);
-function generateLast() {
-    let HTML = ``;
-    HTML = `
-    <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
-    <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-    <h6 class="testimonials_h6">Alex Smith</h6>
-    <p class="envanto">TRECIAS</p>`
-    
-    DOMtestimonialsDiv.innerHTML = HTML;
-}
-*/
 
 const testData = [
 {
@@ -86,17 +48,30 @@ function generateHTML () {
 }
 generateHTML();
 
-// borrow from w3schools
-var slideIndex = 1;
-showSlides();
+let slideIndex = 1;
+let t;
+showSlides(slideIndex);
 
 function showSlides() {
-  var slides = document.querySelectorAll(".mySlides");
-  for (let i = 1; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 2} 
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 11000); // Change image every 11 seconds
+const slides = document.querySelectorAll(".mySlides");
+for (let i = 1; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 2} 
+slides[slideIndex-1].style.display = "block";
+for (let i = 1; i < slides.length; i++) {
+    if (slideIndex == 2) {
+    DOMtestimonialsDots.dataset.selected = 'first'}
+    if (slideIndex === 3) {
+    DOMtestimonialsDots.dataset.selected = 'midle'}
+    if (slideIndex === 4) {
+    DOMtestimonialsDots.dataset.selected = 'last'}
+} 
+  t = setTimeout(showSlides, 11000); // Change image every 11 seconds
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+    clearTimeout(t);
 }
