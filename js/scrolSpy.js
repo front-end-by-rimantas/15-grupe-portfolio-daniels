@@ -14,9 +14,12 @@ $(document).ready(function(){
           } else {
             $target.attr('tabindex','-1');
             $target.focus();
+            
           };
       });
     } 
   });
 });  
+
+
   

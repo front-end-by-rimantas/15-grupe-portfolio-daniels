@@ -22,7 +22,7 @@
                 top:0;
                 right:0;
                 margin-right:20px;
-                margin-top:20px;
+                margin-top:40px;
                 cursor: pointer;    
             }
             .nav > .select{
@@ -32,7 +32,6 @@
         .nav > .select a {
             display: none;
             margin:0;
-            webkit-transition:1s;
             -moz-transition:1s;
             -ms-transition:1s;
             -o-transition:1s;
@@ -45,7 +44,7 @@
             display:inline-block;
             position:fixed;
             top:0;
-            margin-top: 10px;
+            margin-top: 36px;
             margin-left: 20px;      
         }
         .nav> .select a:focus {
@@ -96,6 +95,11 @@
                 cursor: pointer;
                 
             }
+            .kitasNav > .select > a.selected{
+              display:none;
+                  
+              }
+
             .kitasNav > .select{
                 margin:0;
       

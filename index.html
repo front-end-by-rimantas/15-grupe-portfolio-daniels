@@ -6,13 +6,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/Icon/android-chrome-192x192.png">
-    <link rel="stylesheet" href="./css/progress-bar.css">
-    <link rel="stylesheet" href="./css/about-me.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/running_numbers.css">
@@ -20,8 +21,10 @@
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/menu.css">
     <title>Daniels</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
 </head>
 <body onresize="myFunction2()">
 <!-- HEADER -->
@@ -123,7 +126,8 @@
     </div>
 
 <!-- ********************* Portfolio:  -->
-<div class="container portfolio" id="section4">
+<div class="section">
+<div class="portfolio" id="section4">
     <h2>Portfolio.</h2>
            <div class="filter-buttons" id="filtering">
                <span data-category="all" class="active">All</span>
@@ -135,19 +139,22 @@
             <div class="overlay"></div>
         </div>
     </div>
+</div>
     <!-- *****************Testimonials : -->
 <div class="testimonials" id="section3">
     <h4 class="testimonials_h4">Testimonials.</h4>
-    <div class="testimonials_div">
-        <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
-        <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-        <h6 class="testimonials_h6">Alex Smith</h6>
-        <p class="envanto">Envato customer</p>
+    <div class="test_container">
+        <div class="testimonials_div mySlides fade">
+            <img class="testimonials_img" src="./img/clients/0.jpg" alt="author_photo">
+            <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
+            <h6 class="testimonials_h6">Alex Smith</h6>
+            <p class="envanto">Envato customer</p>
+        </div>
     </div>
     <div class="testimonials_dots" data-selected="midle">
-        <div class="testimonials_dot_first" data-option="first"></div>
-        <div class="testimonials_dot_midle" data-option="midle"></div>
-        <div class="testimonials_dot_last" data-option="last"></div>
+        <div class="testimonials_dot" data-option="first" onclick="currentSlide(1)"></div>
+        <div class="testimonials_dot" data-option="midle" onclick="currentSlide(2)"></div>
+        <div class="testimonials_dot" data-option="last" onclick="currentSlide(3)"></div>
     </div>
     
 </div>
@@ -156,22 +163,22 @@
 <div class="running_number-container">
     <div class="column">
         <i class="fa fa-users" aria-hidden="true"></i>
-        <div class="counter">850</div>
+        <div ><span class="counter">850</span></div>
         <p>Happy Customers</p>
     </div>
     <div class="column">
         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-        <div class="counter">230</div>
+        <div ><span class="counter">230</span></div>
         <p>Complete Projects</p>    
     </div>
     <div class="column">
         <i class="fa fa-bullhorn"></i>
-        <div class="counter">9450</div>
+        <div ><span class="counter">9450</span></div>
         <p>Lines Of Code</p>    
     </div>
     <div class="column">
         <i class="fa fa-cloud-download" aria-hidden="true"></i>
-        <div class="counter">780</div>
+        <div ><span class="counter">780</span></div>
         <p>Files Downloaded</p>    
     </div>
 </div>
@@ -205,37 +212,6 @@
                 <h3>Contact Us.</h3>
             </div>
             <div class="contactbox">
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-location-arrow"></i></span>
-                    <h6>Address</h6>
-                    <p>6834 Hollywood Blvd - Los Angeles CA</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-envelope"></i></span>
-                    <h6>Email</h6>
-                    <p>Support@website.com</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-phone"></i></span>
-                    <h6>Phone</h6>
-                    <p>+20 010 2517 8918</p>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Name" class="ehh">
-                    </div>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Email" class="ehh">
-                    </div>
-                </div>
-                <div class="textarea">
-                    <textarea class="yeet" name="message" rows="6" placeholder="Message"></textarea>
-                </div>
-                <div class="btleft">
-                    <input type="submit" value="submit" class="btn">
-                </div>
             </div>
         </div>
     </section>
@@ -257,5 +233,7 @@
     <script src="./js/menuRender.js"></script>
     <script src="./js/data/blog-data.js"></script>
     <script src="./js/blog-carousel.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/contactdata.js"></script>
 </body>
 </html>
