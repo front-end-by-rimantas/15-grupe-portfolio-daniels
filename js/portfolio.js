@@ -57,8 +57,9 @@ function galleryImages(filter) {
   portfolio.forEach(image => {
    if (image.category.includes(filter)){
     HTML = `
-    <div>
+    <div class="item">
         <img src="${image.img}" alt="images" data-category="${image.category}" class="img">
+        <div id="lightbox"><img src="${image.img}" alt="images"> </div>
             <div class="overlay">
                 <div>
                 <span class="gallery-title"> ${image.title} <span>
@@ -78,25 +79,22 @@ function galleryImages(filter) {
 
 galleryImages("all");
 
-const lightbox = document.createElement('div')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox)
-const images = document.querySelectorAll('.gallery img');
-const zoom = document.querySelectorAll('.zoom-in');
-
-for (let i=0; i<zoom.length;i++){
-  zoom[i].addEventListener('click', e => {
-    for (i=0; i<images.length; i++){
-      const image = images[i]
-    lightbox.classList.add('active')
-    const img = document.createElement('img')
-    img.src = image.src
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild)
-    }
-    lightbox.appendChild(img)
-  } });
-}
+const lightbox = document.querySelector('#lightbox')
+const images = document.querySelectorAll('.gallery .item');
+console.log(images)
+images.forEach(item => {
+      item.querySelector('.zoom-in').addEventListener('click', e => {
+        lightbox.classList.add('active')
+        // const img = document.createElement('img')
+        // const imagesLoc = document.querySelectorAll('.item > img')
+        // img.src = imagesLoc.src
+        // console.log(imagesLoc)
+        // while (lightbox.firstChild) {
+        //   lightbox.removeChild(lightbox.firstChild)
+        // }
+        // lightbox.appendChild(img)
+      });
+});
 lightbox.addEventListener('click', e => {
   if (e.target !== e.currentTarget) return
   lightbox.classList.remove('active')
