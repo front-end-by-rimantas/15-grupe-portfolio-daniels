@@ -82,7 +82,6 @@ function lightboxImg() {
   const lightbox = document.querySelector('#lightbox')
   const images = document.querySelectorAll('.gallery .item');
   images.forEach(item => {
-
     item.querySelector('.zoom-in').addEventListener('click', e => {
       lightbox.classList.add('active')
       lightbox.querySelector('img').src = item.dataset.src
