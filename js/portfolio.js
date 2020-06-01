@@ -84,7 +84,6 @@ function lightboxImg () {
   const images = document.querySelectorAll('.gallery .item');
 
   images.forEach(item => {
-    console.log(item)
     item.querySelector('.zoom-in').addEventListener('click', e => {
       lightbox.classList.add('active');
       const img = document.createElement('img');
