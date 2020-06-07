@@ -149,7 +149,6 @@ function slide(wrapper, items, prev, next) {
     }
 
     const howMany = Math.abs(whereToShift);
-    console.log(howMany)
     if (allowShift) {
       if (!action) { posInitial = items.offsetLeft; }
 

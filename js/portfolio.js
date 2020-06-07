@@ -59,7 +59,6 @@ function galleryImages(filter) {
     HTML = `
     <div class="item" data-src="${image.img}">
         <img src="${image.img}" alt="images" data-category="${image.category}" class="img">
-        <div id="lightbox"><img src="${image.img}" alt="images"> </div>
             <div class="overlay">
                 <div>
                 <span class="gallery-title"> ${image.title} <span>
@@ -78,13 +77,21 @@ function galleryImages(filter) {
 galleryImages("all");
 
 
-function lightboxImg() {
-  const lightbox = document.querySelector('#lightbox')
+function lightboxImg () {
+  const lightbox = document.createElement('div')
+  lightbox.id = 'lightbox'
+  document.body.appendChild(lightbox)
   const images = document.querySelectorAll('.gallery .item');
+
   images.forEach(item => {
     item.querySelector('.zoom-in').addEventListener('click', e => {
-      lightbox.classList.add('active')
-      lightbox.querySelector('img').src = item.dataset.src
+      lightbox.classList.add('active');
+      const img = document.createElement('img');
+      img.src = item.dataset.src
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild)
+      }
+      lightbox.appendChild(img)
     });
   });
   lightbox.addEventListener('click', e => {
