@@ -6,36 +6,44 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/Icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/Icon/android-chrome-192x192.png">
-    <link rel="stylesheet" href="./css/progress-bar.css">
-    <link rel="stylesheet" href="./css/about-me.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/running_numbers.css">
     <link rel="stylesheet" href="./css/testimonials.css">
     <link rel="stylesheet" href="./css/blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <title>Daniels</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
 </head>
-<body>
+<body onresize="myFunction2()">
 <!-- HEADER -->
     <div>
-        <div class="container nav">
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-            <a href="#">Clients</a>
-            <a href="#">Works</a>
-            <a href="#">Services</a>
-            <a href="#">About</a>
-            <a href="#">Home</a>
-            <a href="#">Daniels</a>
-        </div>
+        <header id="section7" >
+        <nav class="container nav" id="navlist" >
+            <div class="menu" ><i class="fa fa-bars" onclick="myFunction()"></i></div>
+               <div class="select ">
+                   <a  href="#section7" >Home</a>
+                   <a  href="#section6">About</a>
+                   <a  href="#section5">Services</a>
+                   <a  href="#section4">Works</a>
+                   <a  href="#section3">Clients</a>
+                   <a  href="#section2">Blog</a>
+                   <a  href="#section1">Contact</a>
+                </div>
+                   <a  href="#">Daniels</a></div>
+        </nav>
         <div class="container hero">
-            <a href="#" class="ham-menu"></a>
             <div class ="intro">
                 <h2>Hello</h2>
                 <p>I Am
@@ -55,8 +63,9 @@
             </div>
             <div id="particles-js"></div>
         </div>  
+        </header>
 <!-- ABOUT ME -->
-      <div class="container about-me">
+      <div class="container about-me" id="section6">
           <div class="left">
             <img src="./img/hero.png" alt="Hero image">
         </div>
@@ -112,142 +121,97 @@
         </div>
 </div>      
      <!-- SERVICES -->
-     <div class="container services">
+     <div class="services" id="section5">
         <h2>Services.</h2>
     </div>
 
 <!-- ********************* Portfolio:  -->
-<div class="container portfolio">
+<div class="section">
+<div class="portfolio" id="section4">
     <h2>Portfolio.</h2>
-           <div class="filter-buttons">
-               <span class="active" data-target="all">All</span>
-               <span data-target="brand">Brand</span>
-               <span data-target="design">Design</span>
-               <span data-target="graphic">Graphic</span>
-           </div>
-        <div class="gallery">
-            <div class="items">
-
-            </div>
-        </div>
+           <div class="filter-buttons" id="filtering">
+               <span data-category="all" class="active">All</span>
+               <span data-category="brand">Brand</span>
+               <span data-category="design">Design</span>
+               <span data-category="graphic">Graphic</span>
     </div>
-    <!-- *****************Testimonials : -->
-<div class="container testimonials">
-    <h4 class="testimonials_h4">Testimonials.</h4>
-    <div class="testimonials_div">
-        <img class="testimonials_img" src="./img/clients/1.jpg" alt="author_photo">
-        <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-        <h6 class="testimonials_h6">Alex Smith</h6>
-        <p class="envanto">Envato customer</p>
-        <div class="testimonials_dots">
-            <div class="testimonials_dot"></div>
-            <div class="testimonials_dot"></div>
-            <div class="testimonials_dot"></div>
+        <div class="gallery gallery-items">
+            <div class="overlay"></div>
         </div>
     </div>
 </div>
+    <!-- *****************Testimonials : -->
+<div class="testimonials" id="section3">
+    <h4 class="testimonials_h4">Testimonials.</h4>
+    <div class="test_container">
+        <div class="testimonials_div mySlides fade">
+            <img class="testimonials_img" src="./img/clients/0.jpg" alt="author_photo">
+            <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
+            <h6 class="testimonials_h6">Alex Smith</h6>
+            <p class="envanto">Envato customer</p>
+        </div>
+    </div>
+    <div class="testimonials_dots" data-selected="midle">
+        <div class="testimonials_dot" data-option="first" onclick="currentSlide(1)"></div>
+        <div class="testimonials_dot" data-option="midle" onclick="currentSlide(2)"></div>
+        <div class="testimonials_dot" data-option="last" onclick="currentSlide(3)"></div>
+    </div>
+    
+</div>
 
     <!-- ****************Running numbers: -->
+<div class="running_number-container">
+    <div class="column">
+        <i class="fa fa-users" aria-hidden="true"></i>
+        <div ><span class="counter">850</span></div>
+        <p>Happy Customers</p>
+    </div>
+    <div class="column">
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+        <div ><span class="counter">230</span></div>
+        <p>Complete Projects</p>    
+    </div>
+    <div class="column">
+        <i class="fa fa-bullhorn"></i>
+        <div ><span class="counter">9450</span></div>
+        <p>Lines Of Code</p>    
+    </div>
+    <div class="column">
+        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+        <div ><span class="counter">780</span></div>
+        <p>Files Downloaded</p>    
+    </div>
+</div>
+
 
 
 <!-- ***************OUR Blog : -->
 
-    <section class="blog-container">
+    <section class="blogContainer" id="section2">
         <div class="heder">
             <h3>Our Blog.</h3>
         </div>
-        <div id="slider" class="slider">
+         <div id="slider" class="slider">
             <div class="wrapper">
                 <div id="slides" class="slides">
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/1.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Wordpress</p>
-                            <h4 class="trends-text">Top WordPress Themes and Plugins for Hotels, Travel, and</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/2.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Trends</p>
-                            <h4 class="trends-text">Master These Awesome New Skills in March 2018</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/3.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Themeforest</p>
-                            <h4 class="trends-text">The 20 Best Lightroom Presets You Need to Know About</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="img-box">
-                            <img src="./img/blog/4.jpg" class="blog-img">
-                        </div>
-                        <div class="text-box">
-                            <p class="trends">Trends</p>
-                            <h4 class="trends-text">Best Design Items to Appeal to the Millennial Generation</h4>
-                            <p class="read-more">Read More</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="slider-dots">
-            <div class="slider-dot"><span></span></div>
-            <div class="slider-dot"><span></span></div>
+            <div class="prev" id="prev"></div>
+            <div class="next" id="next"></div>
         </div>
     </section>
 
 
     <!-----Contact Us.----->
 
-    <section class="kitoks">
+    <section class="kitoks" id="section1">
         <div class="nmargin">
             <div class="heder">
                 <h3>Contact Us.</h3>
             </div>
             <div class="contactbox">
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-location-arrow"></i></span>
-                    <h6>Address</h6>
-                    <p>6834 Hollywood Blvd - Los Angeles CA</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-envelope"></i></span>
-                    <h6>Email</h6>
-                    <p>Support@website.com</p>
-                </div>
-                <div class="info-box">
-                    <span class="bubble"><i class="fa fa-phone"></i></span>
-                    <h6>Phone</h6>
-                    <p>+20 010 2517 8918</p>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Name" class="ehh">
-                    </div>
-                </div>
-                <div class="inputai">
-                    <div class="inputas">
-                        <input type="text" placeholder="Email" class="ehh">
-                    </div>
-                </div>
-                <div class="textarea">
-                    <textarea class="yeet" name="message" rows="6" placeholder="Message"></textarea>
-                </div>
-                <div class="btleft">
-                    <input type="submit" value="submit" class="btn">
-                </div>
             </div>
         </div>
     </section>
@@ -255,11 +219,21 @@
             <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
     </footer>
     <div id="loader" class="center"></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="./js/scrolSpy.js"></script>
     <script src="./js/loading.js"></script>
-    <script src="./js/data.js"></script>
+    <script src="./js/fixNav.js"></script>
+    <script src="./js/services.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/headerAnim.js"></script>
     <script src="./js/portfolio.js"></script>
+    <script src="./js/runningNumbers.js"></script>
+    <script src="./js/testimonials.js"></script>
+    <script src="./js/menuRender.js"></script>
+    <script src="./js/data/blog-data.js"></script>
+    <script src="./js/blog-carousel.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/contactdata.js"></script>
 </body>
 </html>

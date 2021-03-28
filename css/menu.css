@@ -1,0 +1,149 @@
+ .menu{
+        display:none;
+    }
+
+    
+    @media (min-width: 701px) {
+        .nav {
+            color: white;
+        }
+    }
+    @media (max-width: 700px) {
+
+        .menu {
+            display: inline-block;
+        }
+            .menu > .fa {
+                color: white;
+                font-size: 25px;
+                line-height: 22px;
+                position:relative;
+                position:fixed;
+                top:0;
+                right:0;
+                margin-right:20px;
+                margin-top:40px;
+                cursor: pointer;    
+            }
+            .nav > .select{
+                margin:0;
+        
+            }
+        .nav > .select a {
+            display: none;
+            margin:0;
+            -moz-transition:1s;
+            -ms-transition:1s;
+            -o-transition:1s;
+            transition:1s;
+        }
+        .nav > .select :last-child{
+            margin:0;
+        }
+        .nav >  :last-child{
+            display:inline-block;
+            position:fixed;
+            top:0;
+            margin-top: 36px;
+            margin-left: 20px;      
+        }
+        .nav> .select a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+          }
+    }
+    .dropBox {
+        text-decoration: none !important;
+        margin:0;
+        width:100vw;
+        overflow: visible;
+        display:block !important;
+        color:black !important;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 200;
+        font-size: 20px;   
+        padding-top: 30px;
+        webkit-transition:1s;
+        -moz-transition:1s;
+        -ms-transition:1s;
+        -o-transition:1s;
+        transition:1s;
+    
+    }
+
+    .kitasNav.menu{
+        display:none;
+    }
+
+    @media (max-width: 700px) {
+        .kitasNav.menu {
+            display: inline-block;
+        }
+            .kitasNav >.menu > .fa {
+                display: inline-block;
+                color:black;
+                font-size: 25px;
+                position:relative;
+                position:fixed;
+                top:0;
+                right:0;
+                margin-right:20px;
+                margin-top:20px;
+                cursor: pointer;
+                
+            }
+            .kitasNav > .select > a.selected{
+              display:none;
+                  
+              }
+
+            .kitasNav > .select{
+                margin:0;
+      
+            }
+        .kitasNav > .select a {
+            display: none;
+            margin:0;
+            webkit-transition:1s;
+            -moz-transition:1s;
+            -ms-transition:1;
+            -o-transition:1s;
+            transition:1s;
+        }
+        .kitasNav >  :last-child{
+            display:inline-block;
+            position:fixed;
+            top:0;
+            margin-top:0;
+            margin-left: 20px;      
+        }
+        .kitasNav> .select a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+          }
+    }
+        .dropBox >.kitasNav{
+            overflow: hidden;
+            display:block !important;
+            width:100%;
+            height:300px;
+            color:black!;
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 200;
+            font-size: 20px;
+            padding-top: 20px;
+            margin-top: 20px;
+            webkit-transition:1s;
+            -moz-transition:1s;
+            -ms-transition:1s;
+            -o-transition:1s;
+             transition:1s;
+    
+        }
+        
