@@ -3,237 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/Icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/Icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/Icon/android-chrome-192x192.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/about-me.css">
-    <link rel="stylesheet" href="./css/progress-bar.css">
-    <link rel="stylesheet" href="./css/services.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./css/running_numbers.css">
-    <link rel="stylesheet" href="./css/testimonials.css">
-    <link rel="stylesheet" href="./css/blog.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title>Daniels</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
+    <title>Daniels - Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body onresize="myFunction2()">
-<!-- HEADER -->
-    <div>
-        <header id="section7" >
-        <nav class="container nav" id="navlist" >
-            <div class="menu" ><i class="fa fa-bars" onclick="myFunction()"></i></div>
-               <div class="select ">
-                   <a  href="#section7" >Home</a>
-                   <a  href="#section6">About</a>
-                   <a  href="#section5">Services</a>
-                   <a  href="#section4">Works</a>
-                   <a  href="#section3">Clients</a>
-                   <a  href="#section2">Blog</a>
-                   <a  href="#section1">Contact</a>
-                </div>
-                   <a  href="#">Daniels</a></div>
+<body>
+    <header id="home" class="hero">
+        <nav class="nav" id="nav">
+            <div class="nav-container">
+                <a href="#home" class="logo">Daniels</a>
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#works" class="nav-link">Works</a></li>
+                    <li><a href="#clients" class="nav-link">Clients</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="container hero">
-            <div class ="intro">
-                <h2>Hello</h2>
-                <p>I Am
-                    <span
-                       class="txt-rotate"
-                       data-period="2000"
-                       data-rotate='[ "Lary Daniels", "Developer", "Designer" ]'>
-                    </span>
-                  </p>
-                <div class="row">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-behance"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                </div>
-            </div>
-            <div id="particles-js"></div>
-        </div>  
-        </header>
-<!-- ABOUT ME -->
-      <div class="container about-me" id="section6">
-          <div class="left">
-            <img src="./img/hero.png" alt="Hero image">
-        </div>
-        <div class="row">
-            <h1>About me.</h1>
-            <p>UI / UX DESIGNER & WEB DEVELOPER</p>
-            <p>Lorem ipsum <span>Jerry Daniels</span> dolor sit amet consectetur, adipisicing elit. Eius sapiente sit consectetur, quidem fuga, unde cupiditate accusamus similique aliquid animi sequi tenetur adipisci asperiores officiis aut omnis exercitationem placeat ea.</p>
-            <div class="progress bar">
-                <div class="progress">
-                    <div class="bar" style="width:95%;">
-                    <div class="loading">
-                        <!-- <div class="text"> -->
-                            <div class="title">Web Design</div>
-                            <div class="value">95%</div>
-                            <!-- </div> -->
-                    </div>
-                    </div>
-               
-                </div>
-            </div>
-            <div class="progress bar">
-                <div class="progress">
-                    <div class="bar" style="width:80%;">
-                    <div class="loading">
-                        <!-- <div class="text"> -->
-                            <div class="title">Branding</div>
-                            <div class="value">80%</div>
-                        <!-- </div> -->
-                    </div>
-                    </div>
-               
-                </div>
-            </div>
-            <div class="progress bar">
-                <div class="progress">
-                    <div class="bar" style="width:90%;">
-                    <div class="loading">
-                        <!-- <div class="text"> -->
-                            <div class="title">Development</div>
-                            <div class="value">90%</div>
-                            <!-- </div> -->
-                    </div>
-                    </div>
-               
-                </div>
-            </div>
-            <div class="button DWND">
-                Download C.V
-            </div>
-            <div class="button CCT">
-                Contact Me
+        <div class="hero-content">
+            <h2>Hello</h2>
+            <p class="hero-title">I Am <span class="typewriter" data-words='["Lary Daniels", "Developer", "Designer"]'></span><span class="cursor">|</span></p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
             </div>
         </div>
-</div>      
-     <!-- SERVICES -->
-     <div class="services" id="section5">
-        <h2>Services.</h2>
-    </div>
+        <canvas id="particles"></canvas>
+    </header>
 
-<!-- ********************* Portfolio:  -->
-<div class="section">
-<div class="portfolio" id="section4">
-    <h2>Portfolio.</h2>
-           <div class="filter-buttons" id="filtering">
-               <span data-category="all" class="active">All</span>
-               <span data-category="brand">Brand</span>
-               <span data-category="design">Design</span>
-               <span data-category="graphic">Graphic</span>
-    </div>
-        <div class="gallery gallery-items">
-            <div class="overlay"></div>
-        </div>
-    </div>
-</div>
-    <!-- *****************Testimonials : -->
-<div class="testimonials" id="section3">
-    <h4 class="testimonials_h4">Testimonials.</h4>
-    <div class="test_container">
-        <div class="testimonials_div mySlides fade">
-            <img class="testimonials_img" src="./img/clients/0.jpg" alt="author_photo">
-            <p class="testimonials_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum. Quas perspiciatis dolor quis qui blanditiis quo.</p>
-            <h6 class="testimonials_h6">Alex Smith</h6>
-            <p class="envanto">Envato customer</p>
-        </div>
-    </div>
-    <div class="testimonials_dots" data-selected="midle">
-        <div class="testimonials_dot" data-option="first" onclick="currentSlide(1)"></div>
-        <div class="testimonials_dot" data-option="midle" onclick="currentSlide(2)"></div>
-        <div class="testimonials_dot" data-option="last" onclick="currentSlide(3)"></div>
-    </div>
-    
-</div>
-
-    <!-- ****************Running numbers: -->
-<div class="running_number-container">
-    <div class="column">
-        <i class="fa fa-users" aria-hidden="true"></i>
-        <div ><span class="counter">850</span></div>
-        <p>Happy Customers</p>
-    </div>
-    <div class="column">
-        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-        <div ><span class="counter">230</span></div>
-        <p>Complete Projects</p>    
-    </div>
-    <div class="column">
-        <i class="fa fa-bullhorn"></i>
-        <div ><span class="counter">9450</span></div>
-        <p>Lines Of Code</p>    
-    </div>
-    <div class="column">
-        <i class="fa fa-cloud-download" aria-hidden="true"></i>
-        <div ><span class="counter">780</span></div>
-        <p>Files Downloaded</p>    
-    </div>
-</div>
-
-
-
-<!-- ***************OUR Blog : -->
-
-    <section class="blogContainer" id="section2">
-        <div class="heder">
-            <h3>Our Blog.</h3>
-        </div>
-         <div id="slider" class="slider">
-            <div class="wrapper">
-                <div id="slides" class="slides">
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="img/hero.png" alt="Lary Daniels">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About me.</h2>
+                <p class="subtitle">UI / UX Designer & Web Developer</p>
+                <p class="about-text">Lorem ipsum <strong>Lary Daniels</strong> dolor sit amet consectetur, adipisicing elit. Eius sapiente sit consectetur, quidem fuga, unde cupiditate accusamus similique aliquid animi sequi tenetur adipisci asperiores officiis aut omnis exercitationem placeat ea.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-header">
+                            <span>Web Design</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header">
+                            <span>Branding</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-header">
+                            <span>Development</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                    </div>
+                </div>
+                <div class="about-buttons">
+                    <a href="#" class="btn btn-primary">Download C.V</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
-        </div> 
-        <div class="slider-dots">
-            <div class="prev" id="prev"></div>
-            <div class="next" id="next"></div>
         </div>
     </section>
 
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services.</h2>
+            <div class="services-grid"></div>
+        </div>
+    </section>
 
-    <!-----Contact Us.----->
-
-    <section class="kitoks" id="section1">
-        <div class="nmargin">
-            <div class="heder">
-                <h3>Contact Us.</h3>
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title">Portfolio.</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="brand">Brand</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="graphic">Graphic</button>
             </div>
-            <div class="contactbox">
+            <div class="gallery"></div>
+        </div>
+    </section>
+
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">Testimonials.</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <img src="img/clients/0.jpg" alt="Alex Smith">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat quod velit, a ea esse hic necessitatibus voluptates voluptatum.</p>
+                    <h4>Alex Smith</h4>
+                    <span>Envato Customer</span>
+                </div>
+                <div class="testimonial">
+                    <img src="img/clients/1.jpg" alt="John Doe">
+                    <p>Quas perspiciatis dolor quis qui blanditiis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nesciunt dolore fugiat repellat.</p>
+                    <h4>John Doe</h4>
+                    <span>Happy Client</span>
+                </div>
+                <div class="testimonial">
+                    <img src="img/clients/2.jpg" alt="Jane Wilson">
+                    <p>Eius sapiente sit consectetur, quidem fuga, unde cupiditate accusamus similique aliquid animi sequi tenetur adipisci asperiores officiis.</p>
+                    <h4>Jane Wilson</h4>
+                    <span>Designer</span>
+                </div>
+            </div>
+            <div class="testimonials-dots"></div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="counter" data-target="850">0</span>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat">
+                <svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                <span class="counter" data-target="230">0</span>
+                <p>Complete Projects</p>
+            </div>
+            <div class="stat">
+                <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span class="counter" data-target="9450">0</span>
+                <p>Lines Of Code</p>
+            </div>
+            <div class="stat">
+                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span class="counter" data-target="780">0</span>
+                <p>Files Downloaded</p>
             </div>
         </div>
     </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Our Blog.</h2>
+            <div class="blog-slider">
+                <div class="blog-track"></div>
+            </div>
+            <div class="blog-nav">
+                <button class="blog-prev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button class="blog-next" aria-label="Next">
+                    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us.</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Street Name, City, Country</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@daniels.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
-            <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
+        <p>&copy; 2024 Daniels. All Rights Reserved</p>
     </footer>
-    <div id="loader" class="center"></div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="./js/scrolSpy.js"></script>
-    <script src="./js/loading.js"></script>
-    <script src="./js/fixNav.js"></script>
-    <script src="./js/services.js"></script>
-    <script src="./js/particles.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/headerAnim.js"></script>
-    <script src="./js/portfolio.js"></script>
-    <script src="./js/runningNumbers.js"></script>
-    <script src="./js/testimonials.js"></script>
-    <script src="./js/menuRender.js"></script>
-    <script src="./js/data/blog-data.js"></script>
-    <script src="./js/blog-carousel.js"></script>
-    <script src="./js/button.js"></script>
-    <script src="./js/contactdata.js"></script>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="">
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
